@@ -1,11 +1,11 @@
 # Aktivitetsdata for Vurdering og Tilpasning (AVT)
 Dette repositoriet dokumenterer hvordan AVT-prosjektet bruker xAPI-rammeverket. 
-# xAPI-profil
+## xAPI-profil
 Prosjektet registrerer en ny xAPI-profil med tre nye konsepter:
 - Kompleksitetsnivå
 - Referanse til nasjonale kompetansemål
 - Referanse til AVT-prosjektets ferdighetsstruktur
-# Eksempler på xAPI-utsagn
+## Eksempler på xAPI-utsagn
 Prosjektet reviderer også dokumentet "Eksempler på læringsaktiviteter som «Experience API»-utsagn" (dokument nr. N032) som ble publisert av Standard Norge (SN/K 186 Læringsteknologi-komiteen) september 2017. Endringene er basert på innspill fra deltakende leverandør i AVT-prosjektet og går på:
 - Referanse til skoler og skoleeier endres til å benytte Utdanningsdirektoratets nye API'er mot Nasjonalt Skoleregister.
 - Beskrivelse av kompleksitetsnivå legges til i tråd med ny profil
