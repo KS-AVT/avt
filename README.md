@@ -12,3 +12,5 @@ Prosjektet reviderer også dokumentet "Eksempler på læringsaktiviteter som «E
 - Referanse til nasjonale kompetansemål legges til i tråd med ny profil
 - Referanse til AVT-prosjektets ferdighetsstruktur legges til i tråd med ny profil
 - Syntaks for kallene som gir responsene i eksemplene legges til
+
+[Eksempler](eksempler.md)
