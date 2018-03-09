@@ -1,0 +1,94 @@
+{
+  "@context": "https://w3id.org/xapi/profiles/context",
+  "id": "https://w3id.org/xapi/avt",
+  "type": "Profile",
+  "conformsTo": "https://w3id.org/xapi/profiles#1.0",
+  "prefLabel": {
+    "en": "AVT Profile"
+  },
+  "definition": {
+    "en": "xAPI profile for norwegian research and development project on learning analytics in K-12 education."
+  },
+  "versions": [
+    {
+      "id": "https://w3id.org/xapi/avt/v1.0",
+      "generatedAtTime": "2018-01-23T14:25:59.295Z"
+    }
+  ],
+  "author": {
+    "type": "Organization",
+    "name": "The AVT project"
+  },
+  "concepts": [
+    {
+      "id": "https://w3id.org/xapi/avt/activity-types/competence-aim",
+      "type": "ActivityType",
+      "inScheme": "https://w3id.org/xapi/avt",
+      "prefLabel": {
+        "en": "competence-aim"
+      },
+      "definition": {
+        "en": "Competence attained after completing training at a given level."
+      },
+      "relatedMatch": ["http://adlnet.gov/expapi/activities/objective"]
+    },
+    {
+      "id": "https://w3id.org/xapi/avt/activity-types/learning-objective",
+      "type": "ActivityType",
+      "inScheme": "https://w3id.org/xapi/avt",
+      "prefLabel": {
+        "en": "learning-objective"
+      },
+      "definition": {
+        "en": "tbd"
+      }
+    },
+    {
+      "id": "https://w3id.org/xapi/avt/activity-types/complexity-level",
+      "type": "ActivityType",
+      "inScheme": "https://w3id.org/xapi/avt",
+      "prefLabel": {
+        "en": "complexity-level"
+      },
+      "definition": {
+        "en": "A level or range that measures the difficulty or challenge presented."
+      }
+    },
+    {
+      "id": "https://w3id.org/xapi/avt/activity-types/school-owner",
+      "type": "ActivityType",
+      "inScheme": "https://w3id.org/xapi/avt",
+      "prefLabel": {
+        "en": "school-owner"
+      },
+      "definition": {
+        "en": "tbd"
+      },
+      "broadMatch": ["http://activitystrea.ms/schema/1.0/organization"]
+    },
+    {
+      "id": "https://w3id.org/xapi/avt/activity-types/school",
+      "type": "ActivityType",
+      "inScheme": "https://w3id.org/xapi/avt",
+      "prefLabel": {
+        "en": "school"
+      },
+      "definition": {
+        "en": "tbd"
+      },
+      "broadMatch": ["http://activitystrea.ms/schema/1.0/organization"]
+    },
+    {
+      "id": "https://w3id.org/xapi/avt/activity-types/application",
+      "type": "ActivityType",
+      "inScheme": "https://w3id.org/xapi/avt",
+      "prefLabel": {
+        "en": "application"
+      },
+      "definition": {
+        "en": "tbd"
+      },
+      "relatedMatch": ["http://activitystrea.ms/schema/1.0/application"]
+    }
+  ]
+}
