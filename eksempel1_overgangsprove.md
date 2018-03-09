@@ -1,4 +1,11 @@
-### Oversikt over xAPI-statements for eksempel 1 (Overgangsprøve i regning)
+## Eksempel 1 - Overgangsprøven i matematikk for 4. trinn
+
+Merk: For å forenkle eksempelomfanget så er det kun én oppgave (nr 23) som er modellert, men Overgangsprøven i regning inneholder selvsagt mange flere oppgaver. Informasjonen i eksempelet er til illustrasjon, og har blitt utarbeidet uten involvering fra Inspera (derfor er det sikkert enkelte unøyaktigheter, eksempelvis ID og navn på Feide-tjenesten som faktisk benyttes).
+
+Skjermdump av oppgaven:
+![](bilder/Eksempel%201%20-%20Overgangspr%C3%B8ven%20i%20regning%204.%20trinn%202017.jpg)
+
+### Oversikt over xAPI-statements for eksempel 1 (Overgangsprøven i regning)
 
 Nr.|Comment|Who (actor)|Did (verb)|What (object)|
 ---------|------------------|-------|---------|------|
