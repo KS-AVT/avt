@@ -5,7 +5,9 @@ Prosjektet registrerer en ny xAPI-profil med tre nye konsepter:
 - Kompleksitetsnivå
 - Referanse til nasjonale kompetansemål
 - Referanse til AVT-prosjektets ferdighetsstruktur
+
 [Profil](avt.jsonld)
+
 ## Eksempler på xAPI-utsagn
 Prosjektet reviderer også dokumentet "Eksempler på læringsaktiviteter som «Experience API»-utsagn" (dokument nr. N032) som ble publisert av Standard Norge (SN/K 186 Læringsteknologi-komiteen) september 2017. Endringene er basert på innspill fra deltakende leverandør i AVT-prosjektet og går på:
 - Referanse til skoler og skoleeier endres til å benytte Utdanningsdirektoratets nye API'er mot Nasjonalt Skoleregister.
