@@ -1,10 +1,13 @@
 # Aktivitetsdata for Vurdering og Tilpasning (AVT)
 Dette repositoriet dokumenterer hvordan AVT-prosjektet bruker xAPI-rammeverket. 
 ## xAPI-profil
-Prosjektet registrerer en ny xAPI-profil med tre nye konsepter:
-- Kompleksitetsnivå
+Prosjektet registrerer en ny xAPI-profil med seks nye konsepter:
 - Referanse til nasjonale kompetansemål
 - Referanse til AVT-prosjektets ferdighetsstruktur
+- Kompleksitetsnivå
+- Referanse til skoleeier
+- Referanse til skole
+- Referanse til applikasjon
 
 [Profil](avt.jsonld)
 
