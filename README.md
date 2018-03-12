@@ -1,5 +1,5 @@
 # Aktivitetsdata for Vurdering og Tilpasning (AVT)
-Dette repositoriet dokumenterer hvordan AVT-prosjektet bruker xAPI-rammeverket. 
+Dette repositoriet dokumenterer hvordan AVT-prosjektet bruker xAPI-rammeverket. </br></br>NB! Vi gjør oppmerksom på at lmbase.no ikke er publisert enda. Fullstendig oversikt over datastruktur, kall og responser vil bli publisert fortløpende i dette repositoriet.
 ## xAPI-profil
 Prosjektet registrerer en ny xAPI-profil med seks nye konsepter:
 - Referanse til nasjonale kompetansemål
