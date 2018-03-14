@@ -33,14 +33,14 @@
       "relatedMatch": ["http://adlnet.gov/expapi/activities/objective"]
     },
     {
-      "id": "https://w3id.org/xapi/avt/activity-types/learning-objective",
+      "id": "https://w3id.org/xapi/avt/activity-types/map-section",
       "type": "ActivityType",
       "inScheme": "https://w3id.org/xapi/avt",
       "prefLabel": {
-        "en": "learning-objective"
+        "en": "map-section", 
       },
       "definition": {
-        "en": "tbd"
+        "en": "A subject map is a systematic overview of the various subject topics. A map section represents a specific topic within the subject.",
       }
     },
     {
@@ -62,7 +62,7 @@
         "en": "school-owner"
       },
       "definition": {
-        "en": "tbd"
+        "en": "School owner for the public schools is the municipal education authority and school owner for private shools is the school board."
       },
       "broadMatch": ["http://activitystrea.ms/schema/1.0/organization"]
     },
@@ -74,7 +74,7 @@
         "en": "school"
       },
       "definition": {
-        "en": "tbd"
+        "en": "Specifies the school to which the activity is related."
       },
       "broadMatch": ["http://activitystrea.ms/schema/1.0/organization"]
     },
@@ -86,7 +86,7 @@
         "en": "application"
       },
       "definition": {
-        "en": "tbd"
+        "en": "A specific application or the service provider."
       },
       "relatedMatch": ["http://activitystrea.ms/schema/1.0/application"]
     }
