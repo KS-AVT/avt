@@ -420,7 +420,7 @@ GET ~/statements?agent={"account":{"name":"76a7a061-3c55-430d-8ee0-6f82ec42501f"
                 },
                 {
                     "objectType": "Activity",
-                    "id": "https://lmbase.no/xapi/avt/frameworks/learning-objective/LMnnnnnn",
+                    "id": "https://lmbase.no/xapi/avt/frameworks/map-section/LMnnnnnn",
                     "definition": {
                         "name": {
                             "nb-NO": "LMnnnnnn"
@@ -428,7 +428,7 @@ GET ~/statements?agent={"account":{"name":"76a7a061-3c55-430d-8ee0-6f82ec42501f"
                         "description": {
                             "nb-NO": "misoppfatning om at hastighet i vakum er eksakt lik gravitasjonskraften"
                         },
-                        "type": "https://w3id.org/xapi/avt/activity-types/learning-objective"
+                        "type": "https://w3id.org/xapi/avt/activity-types/map-section"
                     }
                 },
                 {
