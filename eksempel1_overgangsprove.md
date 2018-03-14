@@ -27,10 +27,10 @@ Hent Statements - bruker AND kompetansemål AND vanskegrad
 GET ~/statements?agent={"account":{"name":"76a7a061-3c55-430d-8ee0-6f82ec42501f","homePage":"https://docs.dataporten.no"}}&activity=http://data.udir.no/kl06/K15170&activity=https://lmbase.no/xapi/avt/frameworks/pisa/mathematical-literacy/competence-level-2&related_activities=true
 
 Hent Statements - bruker AND ferdighetsstruktur
-GET ~/statements?agent={"account":{"name":"76a7a061-3c55-430d-8ee0-6f82ec42501f","homePage":"https://docs.dataporten.no"}}&activity=https://lmbase.no/xapi/avt/frameworks/learning-objective/LM100001&related_activities=true
+GET ~/statements?agent={"account":{"name":"76a7a061-3c55-430d-8ee0-6f82ec42501f","homePage":"https://docs.dataporten.no"}}&activity=https://lmbase.no/xapi/avt/frameworks/map-section/LM100001&related_activities=true
 
 Hent Statements - bruker AND ferdighetsstruktur AND vanskegrad
-GET ~/statements?agent={"account":{"name":"76a7a061-3c55-430d-8ee0-6f82ec42501f","homePage":"https://docs.dataporten.no"}}&activity=https://lmbase.no/xapi/avt/frameworks/learning-objective/LM100001&activity=https://lmbase.no/xapi/avt/frameworks/pisa/mathematical-literacy/competence-level-2&related_activities=true
+GET ~/statements?agent={"account":{"name":"76a7a061-3c55-430d-8ee0-6f82ec42501f","homePage":"https://docs.dataporten.no"}}&activity=https://lmbase.no/xapi/avt/frameworks/map-section/LM100001&activity=https://lmbase.no/xapi/avt/frameworks/pisa/mathematical-literacy/competence-level-2&related_activities=true
 ```
 
 #### Eksempel på respons
@@ -207,7 +207,7 @@ GET ~/statements?agent={"account":{"name":"76a7a061-3c55-430d-8ee0-6f82ec42501f"
                 },
                 {
                     "objectType": "Activity",
-                    "id": "https://lmbase.no/xapi/avt/frameworks/learning-objective/LM100001",
+                    "id": "https://lmbase.no/xapi/avt/frameworks/map-section/LM100001",
                     "definition": {
                         "name": {
                             "nb-NO": "Desimaltallsaddisjon med overgang"
@@ -215,7 +215,7 @@ GET ~/statements?agent={"account":{"name":"76a7a061-3c55-430d-8ee0-6f82ec42501f"
                         "description": {
                             "nb-NO": "Ett eller flere av leddene i addisjonen har desimaltall og utregningen inneholder en eller flere tier-overganger"
                         },
-                        "type": "https://w3id.org/xapi/avt/activity-types/learning-objective"
+                        "type": "https://w3id.org/xapi/avt/activity-types/map-section"
                     }
                 },
                 {
@@ -366,7 +366,7 @@ GET ~/statements?agent={"account":{"name":"76a7a061-3c55-430d-8ee0-6f82ec42501f"
                 },
                 {
                     "objectType": "Activity",
-                    "id": "https://lmbase.no/xapi/avt/frameworks/learning-objective/LM100001",
+                    "id": "https://lmbase.no/xapi/avt/frameworks/map-section/LM100001",
                     "definition": {
                         "name": {
                             "nb-NO": "Desimaltallsaddisjon med overgang"
@@ -374,7 +374,7 @@ GET ~/statements?agent={"account":{"name":"76a7a061-3c55-430d-8ee0-6f82ec42501f"
                         "description": {
                             "nb-NO": "Ett eller flere av leddene i addisjonen har desimaltall og utregningen inneholder en eller flere tier-overganger"
                         },
-                        "type": "https://w3id.org/xapi/avt/activity-types/learning-objective"
+                        "type": "https://w3id.org/xapi/avt/activity-types/map-section"
                     }
                 },
                 {
