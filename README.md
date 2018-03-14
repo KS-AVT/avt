@@ -3,7 +3,7 @@ Dette repositoriet dokumenterer hvordan AVT-prosjektet bruker xAPI-rammeverket. 
 ## xAPI-profil
 Prosjektet registrerer en ny xAPI-profil med seks nye konsepter:
 - Referanse til nasjonale kompetansemål
-- Referanse til fagdetaljer i AVT-prosjektets fagdetaljbank.
+- Referanse til områder i AVT-prosjektets fagkart.
 - Kompleksitetsnivå
 - Referanse til skoleeier
 - Referanse til skole
@@ -16,7 +16,7 @@ Prosjektet reviderer også dokumentet "Eksempler på læringsaktiviteter som «E
 - Referanse til skoler og skoleeier endres til å benytte Utdanningsdirektoratets nye API'er mot Nasjonalt Skoleregister.
 - Beskrivelse av kompleksitetsnivå legges til i tråd med ny profil
 - Referanse til nasjonale kompetansemål legges til i tråd med ny profil
-- Referanse til fagdetaljer i AVT-prosjektets fagdetaljbank legges til i tråd med ny profil
+- Referanse til områder i AVT-prosjektets fagkart legges til i tråd med ny profil
 - Syntaks for kallene som gir responsene i eksemplene legges til
 
 [Eksempler](eksempler.md)
