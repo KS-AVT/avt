@@ -33,14 +33,14 @@
       "relatedMatch": ["http://adlnet.gov/expapi/activities/objective"]
     },
     {
-      "id": "https://w3id.org/xapi/avt/activity-types/map-section",
+      "id": "https://w3id.org/xapi/avt/activity-types/area-within-the-map",
       "type": "ActivityType",
       "inScheme": "https://w3id.org/xapi/avt",
       "prefLabel": {
-        "en": "map-section", 
+        "en": "area-within-the-map", 
       },
       "definition": {
-        "en": "A subject map is a systematic overview of the various subject topics. A map section represents a specific topic within the subject.",
+        "en": "A subject map is a systematic overview of the various subject topics. An area within the map represents a topic or area within the subject.",
       }
     },
     {
