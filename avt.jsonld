@@ -21,11 +21,11 @@
   },
   "concepts": [
     {
-      "id": "https://w3id.org/xapi/avt/activity-types/competence-objectives",
+      "id": "https://w3id.org/xapi/avt/activity-types/competence-objective",
       "type": "ActivityType",
       "inScheme": "https://w3id.org/xapi/avt",
       "prefLabel": {
-        "en": "competence-objectives"
+        "en": "competence-objective"
       },
       "definition": {
         "en": "Competence attained after completing training at a given level."
