@@ -81,7 +81,7 @@ GET ~/statements?agent={"account":{"name":"76a7a061-3c55-430d-8ee0-6f82ec42501f"
                         "description": {
                             "nb-NO": "bruke parameterframstilling til å beskrive rettlinjet bevegelse for en partikkel, og bruke derivasjon til å regne ut fart og akselerasjon når posisjonen er kjent, både med og uten digitale verktøy"
                         },
-                        "type": "https://w3id.org/xapi/avt/activity-types/competence-aim"
+                        "type": "https://w3id.org/xapi/avt/activity-types/competence-objective"
                     }
                 },
                 {
@@ -94,7 +94,7 @@ GET ~/statements?agent={"account":{"name":"76a7a061-3c55-430d-8ee0-6f82ec42501f"
                         "description": {
                             "nb-NO": "identifisere kontaktkrefter og gravitasjonskrefter som virker på legemer, tegne kraftvektorer og bruke Newtons tre lover"
                         },
-                        "type": "https://w3id.org/xapi/avt/activity-types/competence-aim"
+                        "type": "https://w3id.org/xapi/avt/activity-types/competence-objective"
                     }
                 },
                 {
@@ -180,7 +180,7 @@ GET ~/statements?agent={"account":{"name":"76a7a061-3c55-430d-8ee0-6f82ec42501f"
                         "description": {
                             "nb-NO": "bruke parameterframstilling til å beskrive rettlinjet bevegelse for en partikkel, og bruke derivasjon til å regne ut fart og akselerasjon når posisjonen er kjent, både med og uten digitale verktøy"
                         },
-                        "type": "https://w3id.org/xapi/avt/activity-types/competence-aim"
+                        "type": "https://w3id.org/xapi/avt/activity-types/competence-objective"
                     }
                 },
                 {
@@ -193,7 +193,7 @@ GET ~/statements?agent={"account":{"name":"76a7a061-3c55-430d-8ee0-6f82ec42501f"
                         "description": {
                             "nb-NO": "identifisere kontaktkrefter og gravitasjonskrefter som virker på legemer, tegne kraftvektorer og bruke Newtons tre lover"
                         },
-                        "type": "https://w3id.org/xapi/avt/activity-types/competence-aim"
+                        "type": "https://w3id.org/xapi/avt/activity-types/competence-objective"
                     }
                 },
                 {
@@ -282,7 +282,7 @@ GET ~/statements?agent={"account":{"name":"76a7a061-3c55-430d-8ee0-6f82ec42501f"
                         "description": {
                             "nb-NO": "bruke parameterframstilling til å beskrive rettlinjet bevegelse for en partikkel, og bruke derivasjon til å regne ut fart og akselerasjon når posisjonen er kjent, både med og uten digitale verktøy"
                         },
-                        "type": "https://w3id.org/xapi/avt/activity-types/competence-aim"
+                        "type": "https://w3id.org/xapi/avt/activity-types/competence-objective"
                     }
                 },
                 {
@@ -295,7 +295,7 @@ GET ~/statements?agent={"account":{"name":"76a7a061-3c55-430d-8ee0-6f82ec42501f"
                         "description": {
                             "nb-NO": "identifisere kontaktkrefter og gravitasjonskrefter som virker på legemer, tegne kraftvektorer og bruke Newtons tre lover"
                         },
-                        "type": "https://w3id.org/xapi/avt/activity-types/competence-aim"
+                        "type": "https://w3id.org/xapi/avt/activity-types/competence-objective"
                     }
                 },
                 {
@@ -402,7 +402,7 @@ GET ~/statements?agent={"account":{"name":"76a7a061-3c55-430d-8ee0-6f82ec42501f"
                         "description": {
                             "nb-NO": "bruke parameterframstilling til å beskrive rettlinjet bevegelse for en partikkel, og bruke derivasjon til å regne ut fart og akselerasjon når posisjonen er kjent, både med og uten digitale verktøy"
                         },
-                        "type": "https://w3id.org/xapi/avt/activity-types/competence-aim"
+                        "type": "https://w3id.org/xapi/avt/activity-types/competence-objective"
                     }
                 },
                 {
@@ -415,7 +415,7 @@ GET ~/statements?agent={"account":{"name":"76a7a061-3c55-430d-8ee0-6f82ec42501f"
                         "description": {
                             "nb-NO": "identifisere kontaktkrefter og gravitasjonskrefter som virker på legemer, tegne kraftvektorer og bruke Newtons tre lover"
                         },
-                        "type": "https://w3id.org/xapi/avt/activity-types/competence-aim"
+                        "type": "https://w3id.org/xapi/avt/activity-types/competence-objective"
                     }
                 },
                 {
