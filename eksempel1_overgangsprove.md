@@ -202,7 +202,7 @@ GET ~/statements?agent={"account":{"name":"76a7a061-3c55-430d-8ee0-6f82ec42501f"
                         "description": {
                             "nb-NO": "beskrive og bruke plassverdisystemet for de hele tallene, bruke positive og negative hele tall, enkle brøker og desimaltall i praktiske sammenhenger og uttrykke tallstørrelser på varierte måter"
                         },
-                        "type": "https://w3id.org/xapi/avt/activity-types/competence-aim"
+                        "type": "https://w3id.org/xapi/avt/activity-types/competence-objective"
                     }
                 },
                 {
@@ -361,7 +361,7 @@ GET ~/statements?agent={"account":{"name":"76a7a061-3c55-430d-8ee0-6f82ec42501f"
                         "description": {
                             "nb-NO": "beskrive og bruke plassverdisystemet for de hele tallene, bruke positive og negative hele tall, enkle brøker og desimaltall i praktiske sammenhenger og uttrykke tallstørrelser på varierte måter"
                         },
-                        "type": "https://w3id.org/xapi/avt/activity-types/competence-aim"
+                        "type": "https://w3id.org/xapi/avt/activity-types/competence-objective"
                     }
                 },
                 {
