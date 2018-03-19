@@ -1,6 +1,7 @@
 ## Eksempel 1 - Overgangsprøven i matematikk for 4. trinn
 
-Merk: For å forenkle eksempelomfanget så er det kun én oppgave (nr 23) som er modellert, men Overgangsprøven i regning inneholder selvsagt mange flere oppgaver. Informasjonen i eksempelet er til illustrasjon, og har blitt utarbeidet uten involvering fra Inspera (derfor er det sikkert enkelte unøyaktigheter, eksempelvis ID og navn på Feide-tjenesten som faktisk benyttes).
+Merk: For å forenkle eksempelomfanget så er det kun én oppgave (nr 23) som er modellert, men Overgangsprøven i regning inneholder selvsagt mange flere oppgaver. Informasjonen i eksempelet er til illustrasjon, og har blitt utarbeidet uten involvering fra Inspera (derfor er det sikkert enkelte unøyaktigheter, eksempelvis ID og navn på Feide-tjenesten som faktisk benyttes). Dataporten-ID'en til "actor" tilhører testeleven "Kari Nordmann" ved en av Utdanningsetatens testskoler. AVT-prosjektet presiserer at linjen "name": "Kari Nordmann", i "actor"-objektet IKKE skal inkluderes i xAPI-statementet, kun Dataporten-ID.
+
 
 Skjermdump av oppgaven:
 ![](bilder/Eksempel%201%20-%20Overgangspr%C3%B8ven%20i%20regning%204.%20trinn%202017.jpg)
@@ -43,7 +44,6 @@ GET ~/statements?agent={"account":{"name":"76a7a061-3c55-430d-8ee0-6f82ec42501f"
     "timestamp": "2018-05-10T11:30:00Z",
     "actor": {
         "objectType": "Agent",
-        "name": "Kari Nordmann",
         "account": {
             "homePage": "https://docs.dataporten.no",
             "name": "76a7a061-3c55-430d-8ee0-6f82ec42501f"
@@ -119,7 +119,6 @@ GET ~/statements?agent={"account":{"name":"76a7a061-3c55-430d-8ee0-6f82ec42501f"
     "timestamp": "2018-05-10T11:31:02Z",
     "actor": {
         "objectType": "Agent",
-        "name": "Kari Nordmann",
         "account": {
             "homePage": "https://docs.dataporten.no",
             "name": "76a7a061-3c55-430d-8ee0-6f82ec42501f"
@@ -278,7 +277,6 @@ GET ~/statements?agent={"account":{"name":"76a7a061-3c55-430d-8ee0-6f82ec42501f"
     "timestamp": "2018-05-10T11:32:42Z",
     "actor": {
         "objectType": "Agent",
-        "name": "Kari Nordmann",
         "account": {
             "homePage": "https://docs.dataporten.no",
             "name": "76a7a061-3c55-430d-8ee0-6f82ec42501f"
@@ -437,7 +435,6 @@ GET ~/statements?agent={"account":{"name":"76a7a061-3c55-430d-8ee0-6f82ec42501f"
     "timestamp": "2018-05-10T11:50:00Z",
     "actor": {
         "objectType": "Agent",
-        "name": "Kari Nordmann",
         "account": {
             "homePage": "https://docs.dataporten.no",
             "name": "76a7a061-3c55-430d-8ee0-6f82ec42501f"
