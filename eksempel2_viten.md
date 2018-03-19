@@ -1,6 +1,6 @@
 ## Eksempel 2 - Fysikkoppgave på Viten.no
 
-Merk: Informasjonen i eksempelet er til illustrasjon, og har blitt utarbeidet uten involvering fra viten.no (derfor er det sikkert enkelte unøyaktigheter, eksempelvis (URI) på object).
+Merk: Informasjonen i eksempelet er til illustrasjon, og har blitt utarbeidet uten involvering fra viten.no (derfor er det sikkert enkelte unøyaktigheter, eksempelvis (URI) på object). Dataporten-ID'en til "actor" tilhører testeleven "Kari Nordmann" ved en av Utdanningsetatens testskoler. AVT-prosjektet presiserer at linjen "name": "Kari Nordmann", i "actor"-objektet IKKE skal inkluderes i xAPI-statementet, kun Dataporten-ID.
 
 Skjermdump av oppgaven:
 ![](bilder/Eksempel%202%20-%20Viten%20-%20Fysikk%201%20-%20Bevegelse%20-%20Fritt%20fall-regn%20ut%20-%20A.jpg)
@@ -42,7 +42,6 @@ GET ~/statements?agent={"account":{"name":"76a7a061-3c55-430d-8ee0-6f82ec42501f"
     "timestamp": "2017-08-29T09:00:00Z",
     "actor": {
         "objectType": "Agent",
-        "name": "Kari Nordmann",
         "account": {
             "homePage": "https://docs.dataporten.no",
             "name": "76a7a061-3c55-430d-8ee0-6f82ec42501f"
@@ -141,7 +140,6 @@ GET ~/statements?agent={"account":{"name":"76a7a061-3c55-430d-8ee0-6f82ec42501f"
     "timestamp": "2017-08-29T09:00:01Z",
     "actor": {
         "objectType": "Agent",
-        "name": "Kari Nordmann",
         "account": {
             "homePage": "https://docs.dataporten.no",
             "name": "76a7a061-3c55-430d-8ee0-6f82ec42501f"
@@ -243,7 +241,6 @@ GET ~/statements?agent={"account":{"name":"76a7a061-3c55-430d-8ee0-6f82ec42501f"
     "timestamp": "2017-08-29T09:00:10Z",
     "actor": {
         "objectType": "Agent",
-        "name": "Kari Nordmann",
         "account": {
             "homePage": "https://docs.dataporten.no",
             "name": "76a7a061-3c55-430d-8ee0-6f82ec42501f"
@@ -345,7 +342,6 @@ GET ~/statements?agent={"account":{"name":"76a7a061-3c55-430d-8ee0-6f82ec42501f"
     "timestamp": "2017-08-29T09:01:00Z",
     "actor": {
         "objectType": "Agent",
-        "name": "Kari Nordmann",
         "account": {
             "homePage": "https://docs.dataporten.no",
             "name": "76a7a061-3c55-430d-8ee0-6f82ec42501f"
