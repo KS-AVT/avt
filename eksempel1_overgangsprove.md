@@ -206,7 +206,7 @@ GET ~/statements?agent={"account":{"name":"76a7a061-3c55-430d-8ee0-6f82ec42501f"
                 },
                 {
                     "objectType": "Activity",
-                    "id": "https://lmbase.no/xapi/avt/frameworks/area-within-the-map/LM100001",
+                    "id": "https://lmbase.no/xapi/avt/frameworks/area-within-the-map/OFKnnnnnn",
                     "definition": {
                         "name": {
                             "nb-NO": "Desimaltallsaddisjon med overgang"
@@ -364,7 +364,7 @@ GET ~/statements?agent={"account":{"name":"76a7a061-3c55-430d-8ee0-6f82ec42501f"
                 },
                 {
                     "objectType": "Activity",
-                    "id": "https://lmbase.no/xapi/avt/frameworks/area-within-the-map/LM100001",
+                    "id": "https://lmbase.no/xapi/avt/frameworks/area-within-the-map/OFKnnnnnn",
                     "definition": {
                         "name": {
                             "nb-NO": "Desimaltallsaddisjon med overgang"
