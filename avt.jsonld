@@ -7,7 +7,7 @@
     "en": "AVT Profile"
   },
   "definition": {
-    "en": "xAPI profile for norwegian research and development project on learning analytics in K-12 education."
+    "en": "xAPI profile for Norwegian research and development project on learning analytics in K-12 education."
   },
   "versions": [
     {
@@ -37,7 +37,7 @@
       "type": "ActivityType",
       "inScheme": "https://w3id.org/xapi/avt",
       "prefLabel": {
-        "en": "area-within-the-map", 
+        "en": "area-within-the-map"
       },
       "definition": {
         "en": "A subject map is a systematic overview of the various subject topics. An area within the map represents a topic or area within the subject.",
@@ -62,7 +62,7 @@
         "en": "school-owner"
       },
       "definition": {
-        "en": "School owner for the public schools is the municipal education authority and school owner for private shools is the school board."
+        "en": "School owner for the public schools is the municipal education authority and school owner for private schools is the school board."
       },
       "broadMatch": ["http://activitystrea.ms/schema/1.0/organization"]
     },
