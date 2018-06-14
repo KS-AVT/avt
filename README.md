@@ -4,10 +4,10 @@ Dette repositoriet dokumenterer hvordan AVT-prosjektet bruker xAPI-rammeverket. 
 Prosjektet registrerer en ny xAPI-profil med seks nye konsepter:
 - Referanse til nasjonale kompetansemål
 - Referanse til områder i AVT-prosjektets fagkart.
-- Kompleksitetsnivå
+- Kompetanseklasse i matematikk etter PISA-skalaen 
 - Referanse til skoleeier
 - Referanse til skole
-- Referanse til applikasjon
+- Referanse til FEIDE-tjeneste/-leverandør
 
 [Profil](avt.jsonld)
 
