@@ -24,7 +24,7 @@ Nr.|Comment|Who (actor)|Did (verb)|What (object)|
 
 #### Eksempel på kall
 
-```javascript
+```
 Hent Statements - bruker
 GET ~/statements?agent={"account":{"name":"76a7a061-3c55-430d-8ee0-6f82ec42501f","homePage":"https://docs.dataporten.no"}}
 
@@ -123,7 +123,7 @@ GET ~/statements?agent={"account":{"name":"76a7a061-3c55-430d-8ee0-6f82ec42501f"
                         "name": {
                             "nb-NO": "Skolens LMS?"
                         },
-                        "type": "https://w3id.org/xapi/avt/activity-types/application"
+                        "type": "https://w3id.org/xapi/avt/activity-types/feide-sp-id"
                     }
                 }
             ]
@@ -224,7 +224,7 @@ GET ~/statements?agent={"account":{"name":"76a7a061-3c55-430d-8ee0-6f82ec42501f"
                         "description": {
                             "nb-NO": "viten.no tilbyr gratis nettbaserte læringsressurser i naturfag - de fleste for ungdomstrinn og videregående skole"
                         },
-                        "type": "https://w3id.org/xapi/avt/activity-types/application"
+                        "type": "https://w3id.org/xapi/avt/activity-types/feide-sp-id"
                     }
                 }
             ]
@@ -325,7 +325,7 @@ GET ~/statements?agent={"account":{"name":"76a7a061-3c55-430d-8ee0-6f82ec42501f"
                         "description": {
                             "nb-NO": "viten.no tilbyr gratis nettbaserte læringsressurser i naturfag - de fleste for ungdomstrinn og videregående skole"
                         },
-                        "type": "https://w3id.org/xapi/avt/activity-types/application"
+                        "type": "https://w3id.org/xapi/avt/activity-types/feide-sp-id"
                     }
                 }
             ]
@@ -416,7 +416,7 @@ GET ~/statements?agent={"account":{"name":"76a7a061-3c55-430d-8ee0-6f82ec42501f"
                 },
                 {
                     "objectType": "Activity",
-                    "id": "https://lmbase.no/xapi/avt/frameworks/area-within-the-map/OFKnnnnnn",
+                    "id": "https://fagkart.no/avt/area-within-the-map/OFKnnnnnn",
                     "definition": {
                         "name": {
                             "nb-NO": "OFKnnnnnn"
@@ -457,7 +457,7 @@ GET ~/statements?agent={"account":{"name":"76a7a061-3c55-430d-8ee0-6f82ec42501f"
                         "description": {
                             "nb-NO": "viten.no tilbyr gratis nettbaserte læringsressurser i naturfag - de fleste for ungdomstrinn og videregående skole"
                         },
-                        "type": "https://w3id.org/xapi/avt/activity-types/application"
+                        "type": "https://w3id.org/xapi/avt/activity-types/feide-sp-id"
                     }
                 }
             ]

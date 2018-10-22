@@ -7,7 +7,7 @@
     "en": "AVT Profile"
   },
   "definition": {
-    "en": "xAPI profile for norwegian research and development project on learning analytics in K-12 education."
+    "en": "xAPI profile for a Norwegian research and development project on learning analytics in K-12 education."
   },
   "versions": [
     {
@@ -25,10 +25,12 @@
       "type": "ActivityType",
       "inScheme": "https://w3id.org/xapi/avt",
       "prefLabel": {
-        "en": "competence-objective"
+        "en": "competence-objective",
+        "nb": "kompetansemaal"
       },
       "definition": {
-        "en": "Competence attained after completing training at a given level."
+        "en": "Competence a student shall have attained after completing training at a given level/step.",
+        "nb": "Kompetanse en elev skal ha oppnådd etter endt opplæring på et gitt nivå/trinn."
       },
       "relatedMatch": ["http://adlnet.gov/expapi/activities/objective"]
     },
@@ -37,21 +39,25 @@
       "type": "ActivityType",
       "inScheme": "https://w3id.org/xapi/avt",
       "prefLabel": {
-        "en": "area-within-the-map", 
+        "en": "area-within-the-map",
+        "nb": "omraade-i-fagkartet"
       },
       "definition": {
-        "en": "A subject map is a systematic overview of the various subject topics. An area within the map represents a topic or area within the subject.",
+        "en": "A subject map is a systematic overview of the various parts of a subject. An area within the map represents a specific part of the subject.",
+        "nb": "Et fagkart er en systematisk oversikt over delene av et fag. Et område i fagkartet representerer en spesifikk del av faget."
       }
     },
     {
-      "id": "https://w3id.org/xapi/avt/activity-types/complexity-level",
+      "id": "https://w3id.org/xapi/avt/activity-types/mathematical-competence-class",
       "type": "ActivityType",
       "inScheme": "https://w3id.org/xapi/avt",
       "prefLabel": {
-        "en": "complexity-level"
+        "en": "mathematical-competence-class",
+        "nb": "kompetanseklasse-i-matematikk"
       },
       "definition": {
-        "en": "A level or range that measures the difficulty or challenge presented."
+        "en": "Classification by the PISA competence classes for mathematical literacy.",
+        "nb": "Klassifisering etter PISAs kompetanseklasser i matematikk."
       }
     },
     {
@@ -59,10 +65,12 @@
       "type": "ActivityType",
       "inScheme": "https://w3id.org/xapi/avt",
       "prefLabel": {
-        "en": "school-owner"
+        "en": "school-owner",
+        "nb": "skoleeier"
       },
       "definition": {
-        "en": "School owner for the public schools is the municipal education authority and school owner for private shools is the school board."
+        "en": "School owner for the public schools is the municipal education authority and school owner for private schools is the school board.",
+        "nb": "Skoleeier er kommune/fylkeskommune for offentlige skoler og styret for friskoler."
       },
       "broadMatch": ["http://activitystrea.ms/schema/1.0/organization"]
     },
@@ -71,22 +79,26 @@
       "type": "ActivityType",
       "inScheme": "https://w3id.org/xapi/avt",
       "prefLabel": {
-        "en": "school"
+        "en": "school",
+        "nb": "skole"
       },
       "definition": {
-        "en": "Specifies the school to which the activity is related."
+        "en": "The school where the student who undergoes the activity is enrolled.",
+        "nb": "Skolen hvor eleven som utfører aktiviteten er tilknyttet."
       },
       "broadMatch": ["http://activitystrea.ms/schema/1.0/organization"]
     },
     {
-      "id": "https://w3id.org/xapi/avt/activity-types/application",
+      "id": "https://w3id.org/xapi/avt/activity-types/feide-sp-id",
       "type": "ActivityType",
       "inScheme": "https://w3id.org/xapi/avt",
       "prefLabel": {
-        "en": "application"
+        "en": "feide-sp-id",
+        "nb"; "feide-tjeneste-id"
       },
       "definition": {
-        "en": "A specific application or the service provider."
+        "en": "A specific service provider or application as registered in FEIDE.",
+        "nb": "En spesifikk tjenesteleverandør eller tjeneste som er registrert i FEIDE."
       },
       "relatedMatch": ["http://activitystrea.ms/schema/1.0/application"]
     }
