@@ -94,15 +94,12 @@ GET ~/statements?agent={"account":{"name":"76a7a061-3c55-430d-8ee0-6f82ec42501f"
                 },
                 {
                     "objectType": "Activity",
-                    "id": "https://api.feide.no/2/sp/1855493",
+                    "id": "https://clientadmin.dataporten-api.no/clients/cc2b2720-4dae-4220-8258-1f6ac8c6dd4f",
                     "definition": {
                         "name": {
-                            "nb-NO": "Inspera Assessment"
+                            "nb-NO": "Inspera"
                         },
-                        "description": {
-                            "nb-NO": "En skybasert prøve og eksamensløsning for skoler og universiteter. Lag og gjennomfør inspirerende prøver, og analyser resultatene for å hjelpe kandidaten til å lære mer"
-                        },
-                        "type": "https://w3id.org/xapi/avt/activity-types/feide-sp-id"
+                        "type": "https://w3id.org/xapi/avt/activity-types/feide-clientinfo"
                     }
                 }
             ]
@@ -252,15 +249,12 @@ GET ~/statements?agent={"account":{"name":"76a7a061-3c55-430d-8ee0-6f82ec42501f"
                 },
                 {
                     "objectType": "Activity",
-                    "id": "https://api.feide.no/2/sp/1855493",
+                    "id": "https://clientadmin.dataporten-api.no/clients/cc2b2720-4dae-4220-8258-1f6ac8c6dd4f",
                     "definition": {
                         "name": {
                             "nb-NO": "Inspera Assessment"
                         },
-                        "description": {
-                            "nb-NO": "En skybasert prøve og eksamensløsning for skoler og universiteter. Lag og gjennomfør inspirerende prøver, og analyser resultatene for å hjelpe kandidaten til å lære mer"
-                        },
-                        "type": "https://w3id.org/xapi/avt/activity-types/feide-sp-id"
+                        "type": "https://w3id.org/xapi/avt/activity-types/feide-clientinfo"
                     }
                 }
             ]
@@ -410,15 +404,12 @@ GET ~/statements?agent={"account":{"name":"76a7a061-3c55-430d-8ee0-6f82ec42501f"
                 },
                 {
                     "objectType": "Activity",
-                    "id": "https://api.feide.no/2/sp/1855493",
+                    "id": "https://clientadmin.dataporten-api.no/clients/cc2b2720-4dae-4220-8258-1f6ac8c6dd4f",
                     "definition": {
                         "name": {
                             "nb-NO": "Inspera Assessment"
                         },
-                        "description": {
-                            "nb-NO": "En skybasert prøve og eksamensløsning for skoler og universiteter. Lag og gjennomfør inspirerende prøver, og analyser resultatene for å hjelpe kandidaten til å lære mer"
-                        },
-                        "type": "https://w3id.org/xapi/avt/activity-types/feide-sp-id"
+                        "type": "https://w3id.org/xapi/avt/activity-types/feide-clientinfo"
                     }
                 }
             ]
@@ -496,15 +487,12 @@ GET ~/statements?agent={"account":{"name":"76a7a061-3c55-430d-8ee0-6f82ec42501f"
                 },
                 {
                     "objectType": "Activity",
-                    "id": "https://api.feide.no/2/sp/1855493",
+                    "id": "https://clientadmin.dataporten-api.no/clients/cc2b2720-4dae-4220-8258-1f6ac8c6dd4f",
                     "definition": {
                         "name": {
                             "nb-NO": "Inspera Assessment"
                         },
-                        "description": {
-                            "nb-NO": "En skybasert prøve og eksamensløsning for skoler og universiteter. Lag og gjennomfør inspirerende prøver, og analyser resultatene for å hjelpe kandidaten til å lære mer"
-                        },
-                        "type": "https://w3id.org/xapi/avt/activity-types/feide-sp-id"
+                        "type": "https://w3id.org/xapi/avt/activity-types/feide-clientinfo"
                     }
                 }
             ]
