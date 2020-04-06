@@ -89,16 +89,16 @@
       "broadMatch": ["http://activitystrea.ms/schema/1.0/organization"]
     },
     {
-      "id": "https://w3id.org/xapi/avt/activity-types/feide-sp-id",
+      "id": "https://w3id.org/xapi/avt/activity-types/feide-clientinfo",
       "type": "ActivityType",
       "inScheme": "https://w3id.org/xapi/avt",
       "prefLabel": {
-        "en": "feide-sp-id",
-        "nb"; "feide-tjeneste-id"
+        "en": "feide-clientinfo",
+        "nb"; "feide-klientinfo"
       },
       "definition": {
-        "en": "A specific service provider or application as registered in FEIDE.",
-        "nb": "En spesifikk tjenesteleverandør eller tjeneste som er registrert i FEIDE."
+        "en": "Information about a specific client registered in FEIDE OAuth/OpenID Connect.",
+        "nb": "Informasjon om en spesifikk klient som er registrert i FEIDE OAuth/OpenID Connect."
       },
       "relatedMatch": ["http://activitystrea.ms/schema/1.0/application"]
     }
