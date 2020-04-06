@@ -7,7 +7,7 @@ Prosjektet registrerer en ny xAPI-profil med seks nye konsepter:
 - Kompetanseklasse i matematikk etter PISA-skalaen 
 - Referanse til skoleeier
 - Referanse til skole
-- Referanse til FEIDE-tjeneste/-leverandør
+- Referanse til FEIDE-klient (Nye Feide, OAuth2/OIDC)
 
 [Profil](avt.jsonld)
 
