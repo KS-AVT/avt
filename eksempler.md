@@ -1,23 +1,23 @@
 # Eksempler på kall mot og respons fra leverandørenes aktivitetsdata-API
-Deltakende leverandører i AVT-prosjektet forholder seg til dette dokumentet i stedet for det som ble sendt til dem i forbindelse med invitasjon til deltakelse ("Eksempler på læringsaktiviteter som «Experience API»-utsagn", dokument nr. N032,  publisert av Standard Norge SN/K 186 Læringsteknologi-komiteen i september 2017)
 
-Det er valgt ut flere eksempler, bl.a. fra en tenkt besvarelse av en matematikk-oppgave i "Overgangsprøven i matematikk for 4. trinn" som benyttes i grunnskolen i Oslo (eksempel 1 *uten* og eksempel 4 *med* bruk av `moreInfo`-attributt), et eksempel fra en tenkt oppgaveløsning i fysikk på viten.no og et fra en tenkt oppgaveløsning på lokus.no (med bruk av hint).
-
-NB: Eksemplene er laget ut i fra hva som kanskje kunne vært mulig dersom verktøyene støttet å generere læringsaktiviteter i xAPI format, men ingen av de to systemene gjør dette per i dag.
 
 Eksemplene på xAPI-utsagn inkluderer å vise muligheter for følgende informasjon:
 - hvordan verb og aktivitetstyper fremkommer i noen xAPI-utsagn
-- hvordan en aktør (en elev) kan identifiseres via en ID (brukernavn) fra Feide/Dataporten
-- hvordan en skole og skoleeier kan identifiseres via organisasjonsnummeret mot nasjonalt skoleregister
+- hvordan en aktør (en elev) skal identifiseres via en ID (brukernavn) fra Feide/Dataporten
+- hvordan en leverandør skal identifiseres via id (guid) hos Feide (Dataporten)
 - hvordan man kan inkludere knytninger mellom læringsaktiviteten og kompetansemål fra GREP inn i xAPI-utsagnene
 - hvordan man kan inkludere knytninger mellom læringsaktiviteten og AVT-prosjektets ferdighetsstruktur
 - hvordan man kan inkludere både «spørsmål» og «svar» på en oppgave, samt varighet (duration) og skåre (result.score)
 - hvordan man kan benytte `moreInfo` for å slippe å inkludere detaljert beskrivelse av oppgaver/læringsressurser, og i stedet referere til en slik beskrivelse på en annen nettside
 
-## [Eksempel 1 - Overgangsprøven i matematikk for 4. trinn](eksempel1_overgangsprove.md)
+### [Eksempel A - En fiktiv oppgave i matematikk](eksempel_a_matematikk.md.md)
 
-## [Eksempel 2 - Fysikkoppgave på Viten.no](eksempel2_viten.md)
+Dette er en oversikt over kall som blir brukt i AVT-prosjektet, og som leverandørene må kunne gi respons på. I tillegg går ekesmpelet gjennom de forskellige responsene vi forventer å få fra leverandørenes aktivitetsdata-API.
 
-## [Eksempel 3 - Kapitteltest på Lokus.no](eksempel3_lokus_med_hint.md)
+### [Eksempel B - Overgangsprøven i matematikk for 4. trinn](eksempel_b_overgangsprove.md)
 
-## [Eksempel 4 - Overgangsprøven i matematikk for 4. trinn, med bruk av moreInfo](eksempel4_overgangsprove_med_moreInfo.md)
+Dette er en tenkt besvarelse av en matematikk-oppgave i "Overgangsprøven i matematikk for 4. trinn" som benyttes i grunnskolen i Oslo.
+
+### [Eksempel 3 - Kapitteltest på Lokus.no](eksempel3_lokus_med_hint.md)
+
+Dette er en tenkt oppgaveløsning på lokus.no der vi viser hvordan elevens bruk av hint skal komme frem i responsen.
