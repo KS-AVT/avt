@@ -2,13 +2,11 @@
 
 Merk: For å forenkle eksempelomfanget så er det kun én oppgave (nr 6) som er modellert, men kapitteltesten inneholder selvsagt mange flere oppgaver. Informasjonen i eksempelet er til illustrasjon. Derfor er det sikkert enkelte unøyaktigheter, eksempelvis ID og navn på Feide-tjenesten som faktisk benyttes. Dataporten-ID'en til "actor" tilhører testeleven "Kari Nordmann" ved en av Utdanningsetatens testskoler. AVT-prosjektet presiserer at linjen "name": "Kari Nordmann", i "actor"-objektet IKKE skal inkluderes i xAPI-statementet, kun Dataporten-ID.
 
-xAPI statements i dette eksempelet er veldig likt Eksempel 1, men med unntak av at xAPI statement nr 3 i dette eksempelet viser at et hint har blitt avdekket.
+xAPI statement nr 3 i dette eksempelet viser at et hint har blitt avdekket.
 Utsagnet er basert på "xAPI recipe / oppskrift" hentet fra https://wiki.visualcatch.org/en/assessment.html#readF
 
-Forskjellen mellom xAPI statement nummer 2 og 3 er at nr 3 benytter verbet "leste / read" og at hint-teksten er lagt inn som en extension av "object", samt at "result" objektet kun inneholder et tidsstempel (duration) for når hintet ble avdekket, og inneholder ikke selve svaret.
-xAPI statement nr 4 inneholder det samme som i nummer 2, men denne gang med riktige svar og inkluderer også hintet som er benyttet i en extension av "object".
-
-NB: Vi må bli enige om hvilken IRI vi skal benytte for verbet "leste / read", verbet er definert i flere vokabularer (men ikke i ADL-vokabularet).
+Forskjellen mellom xAPI statement nummer 2 og 3 er at nr 3 benytter verbet `"leste"` / `"read"` og at hint-teksten er lagt inn som en extension av `"object"`, samt at `"result"` objektet kun inneholder et tidsstempel (duration) for når hintet ble avdekket, og inneholder ikke selve svaret.
+xAPI statement nr 4 inneholder det samme som i nummer 2, men denne gang med riktige svar og inkluderer også hintet som er benyttet i en extension av `"object"`.
 
 Vi har i dette eksempelet valgt å vise hele responsene, selv om store deler er identiske med hverandre.
 
@@ -341,8 +339,8 @@ Utsnitt av skjermbilde etter at hint er avdekket:
 ```
 
 #### 4. Eleven svarer nå rett på "Kapitteltest / 4 Tall og algebra / Nummer 8 / Nummer - Lokus"
-Responsen er nå identisk med 2., med unntak av "result"-delen
-Denne har nå "success": true, men siden hun har brukt et hint for å svare er nå et poeng trukket fra ("score.raw": 2 i stedet for 3).
+Responsen er nå identisk med 2., med unntak av `"result"`-delen
+Denne har nå `"success": true`, men siden hun har brukt et hint for å svare er nå et poeng trukket fra (`"score.raw": 2` i stedet for 3).
 ```json
 {
     "id": "a0dbae37-c87a-4965-b09b-c25d6a997eac",

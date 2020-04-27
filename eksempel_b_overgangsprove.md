@@ -198,7 +198,7 @@ Skjermdump av oppgaven:
 }
 ```
 
-#### 3. Når eleven svarer korrekt, blir eksempelet det samme som 2. med unntak av "result"
+#### 3. Når eleven svarer korrekt, blir eksempelet det samme som 2. med unntak av `"result"`
 ```json
     "result": {
         "duration": "PT2M45S",

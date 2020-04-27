@@ -1,11 +1,9 @@
-## Eksempel A - Oppgave i matematikk
+## Eksempel A - Eksempeloppgave i matematikk
 
 
-
-Skjermdump av oppgaven:
 ![](bilder/eksempel_a.png)
 
-#### Kall som leverandører i AVT-prosjektet **SKAL** levere respons på
+### Kall som leverandører i AVT-prosjektet **SKAL** levere respons på
 
 Hent statements for en enkelt elev
 ```
@@ -17,7 +15,7 @@ Hent statements for en enkelt elev som ligger innenefor et kompetansemål
 GET ~/statements?agent={"account":{"name":"76a7a061-3c55-430d-8ee0-6f82ec42501f","homePage": "https://docs.dataporten.no"}}&activity=http://psi.udir.no/kl06/KM240&related_activities=true
 ```
 
-#### Kall som leverandører i AVT-prosjektet **KAN** levere respons på
+### Kall som leverandører i AVT-prosjektet **KAN** levere respons på
 
 Hent statements for en enkelt elev som ligger innenefor et kompetansemål **OG** har et bestemt kompetansenivå
 ```
@@ -29,12 +27,12 @@ Hent statements for en enkelt elev som ligger innenfor et område i fagkartet
 GET ~/statements?agent={"account":{"name":"76a7a061-3c55-430d-8ee0-6f82ec42501f","homePage":"https://docs.dataporten.no"}}&activity=https://fagkart.no/avt/area-within-the-map/OFK100001&related_activities=true
 ```
 
-#### Eksempler på respons
+### Eksempler på respons
 Responsen skal da inneholde alle statements som er merket mot de overnevnte søkekriteriene. I tillegg skal responsen også levere på overliggende statements til disse, som eventuelt ligger i leverandørens LRS (logget på oppgavesett, kapittel for oppgaven, overliggende oppgave om dette er en deloppgave osv.)
 
 
-##### Respons for et statement som beskriver at eleven har svart feil på eksempelet over. 
-Dette er en **minimumsrespons** på hva leverandører i AVT bør levere. Her har leverandøren valgt å ikke vise innholdet av oppgaven. Det bør da legges inn en lenke (bak pålogging) til oppgaven eller til en side som forklarer innholdet. Denne legges under "object.definition.moreInfo".
+#### Respons for et statement som beskriver at eleven har svart feil på eksempelet over. 
+Dette er en **minimumsrespons** på hva leverandører i AVT bør levere. Her har leverandøren valgt å ikke vise innholdet av oppgaven. Det bør da legges inn en lenke (bak pålogging) til oppgaven eller til en side som forklarer innholdet. Denne legges under `"object.definition.moreInfo"`.
 ```json
 {
     "id": "f9c2806a-88dc-4f79-886f-0f76f9839556",
@@ -92,7 +90,7 @@ Dette er en **minimumsrespons** på hva leverandører i AVT bør levere. Her har
 }
 ```
 
-##### Er elevens svar helt eller delvis korrekt, vil "result"-delen kunne bli følgende 
+#### Er elevens svar helt eller delvis korrekt, vil `"result"`-delen kunne bli følgende 
 ```json
     "result": {
         "duration": "PT15S",
@@ -106,7 +104,7 @@ Dette er en **minimumsrespons** på hva leverandører i AVT bør levere. Her har
     },
 ```
 
-##### Ønsker leverandøren å vise oppgaveteksten i responsen, kan "object"-delen se slik ut
+#### Ønsker leverandøren å vise oppgaveteksten i responsen, kan `"object"`-delen se slik ut
 ```json
     "object": {
         "objectType": "Activity",
@@ -159,7 +157,7 @@ Dette er en **minimumsrespons** på hva leverandører i AVT bør levere. Her har
     },
 ```
 
-Da **skal** "result" også vise elevens valg av alternativ ("response")
+Da **skal** `"result"` også vise elevens valg av alternativ (`"response"`)
 ```json
     "result": {
         "duration": "PT15S",
@@ -174,9 +172,9 @@ Da **skal** "result" også vise elevens valg av alternativ ("response")
     },
 ```
 
-##### "context" kan utvides. 
-Det **kan** i tillegg til kompetansemål legges inn kobling mot lk20 sine begrep 'verb', 'grunnleggende ferdigheter' og 'kjerneelementer', og koblinger mot fagkart eller vanskegrad. Det **bør** her legges inn alle koblinger som leverandøren har merket sine oppgaver mot. 
-I eksempelt er "definition" tatt med under "contextActivities.grouping". Denne er frivillig  å ta med i responsen. "objectType" og "id" **må** imidlertid alltid være med.
+#### `"context": {}` kan utvides. 
+Det **kan** i tillegg til kompetansemål legges inn kobling mot lk20 sine begrep 'verb', 'grunnleggende ferdigheter' og 'kjerneelementer', og koblinger mot fagkart eller vanskegrad. Det **bør** her legges inn alle koblinger som leverandøren har merket sine oppgaver mot.
+I eksempelt er `"description"` noen steder tatt med under `"contextActivities.grouping.definition"`. Denne er frivillig  å ta med i responsen. `"objectType"`, `"id"`, `"definition.name"` og `"definition.type"` **må** imidlertid alltid være med.
 I tillegg **bør** responsen også inneholde referanse til overliggende statements (logget på oppgavesett, kapittel for oppgaven, overliggende oppgave om dette er en deloppgave osv.), om disse finnes.
 ```json
     "context": {

@@ -8,9 +8,9 @@ Eksemplene på xAPI-utsagn inkluderer å vise muligheter for følgende informasj
 - hvordan man kan inkludere knytninger mellom læringsaktiviteten og kompetansemål fra GREP inn i xAPI-utsagnene
 - hvordan man kan inkludere knytninger mellom læringsaktiviteten og AVT-prosjektets ferdighetsstruktur
 - hvordan man kan inkludere både «spørsmål» og «svar» på en oppgave, samt varighet (duration) og skåre (result.score)
-- hvordan man kan benytte `moreInfo` for å slippe å inkludere detaljert beskrivelse av oppgaver/læringsressurser, og i stedet referere til en slik beskrivelse på en annen nettside
+- hvordan man kan benytte `"moreInfo"` for å slippe å inkludere detaljert beskrivelse av oppgaver/læringsressurser, og i stedet referere til en slik beskrivelse på en annen nettside
 
-### [Eksempel A - En fiktiv oppgave i matematikk](eksempel_a_matematikk.md.md)
+### [Eksempel A - En fiktiv oppgave i matematikk](eksempel_a_matematikk.md)
 
 Dette er en oversikt over kall som blir brukt i AVT-prosjektet, og som leverandørene må kunne gi respons på. I tillegg går ekesmpelet gjennom de forskellige responsene vi forventer å få fra leverandørenes aktivitetsdata-API.
 
