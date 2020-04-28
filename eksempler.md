@@ -18,6 +18,6 @@ Dette er en oversikt over kall som blir brukt i AVT-prosjektet, og som leverand�
 
 Dette er en tenkt besvarelse av en matematikk-oppgave i "Overgangsprøven i matematikk for 4. trinn" som benyttes i grunnskolen i Oslo.
 
-### [Eksempel 3 - Kapitteltest på Lokus.no](eksempel_c_lokus_med_hint.md)
+### [Eksempel C - Kapitteltest på Lokus.no](eksempel_c_lokus_med_hint.md)
 
 Dette er en tenkt oppgaveløsning på lokus.no der vi viser hvordan elevens bruk av hint skal komme frem i responsen.
