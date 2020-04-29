@@ -10,6 +10,11 @@ Hent statements for en enkelt elev
 GET ~/statements?agent={"account":{"name":"76a7a061-3c55-430d-8ee0-6f82ec42501f","homePage":"https://docs.dataporten.no"}}
 ```
 
+Hent statements for en enkelt elev, som er lagret etter en bestemt timestamp
+```
+GET ~/statements?agent={"account":{"name":"76a7a061-3c55-430d-8ee0-6f82ec42501f","homePage":"https://docs.dataporten.no"}}&since=2020-02-24T15:42:12Z
+```
+
 Hent statements for en enkelt elev som ligger innenefor et kompetansemål
 ```
 GET ~/statements?agent={"account":{"name":"76a7a061-3c55-430d-8ee0-6f82ec42501f","homePage": "https://docs.dataporten.no"}}&activity=http://psi.udir.no/kl06/KM240&related_activities=true
@@ -27,8 +32,11 @@ Hent statements for en enkelt elev som ligger innenfor et område i fagkartet
 GET ~/statements?agent={"account":{"name":"76a7a061-3c55-430d-8ee0-6f82ec42501f","homePage":"https://docs.dataporten.no"}}&activity=https://fagkart.no/avt/area-within-the-map/OFK100001&related_activities=true
 ```
 
+Det skal være mulig å kombinere flere filter, både fra skal- og kan-delen. I tillegg **kan** det også være mulig å svare på kall som spesifisert i [xAPI-spesifikasjonene](https://github.com/adlnet/xAPI-Spec/blob/master/xAPI-Communication.md#213-get-statements).
+
 ### Eksempler på respons
 Responsen skal da inneholde alle statements som er merket mot de overnevnte søkekriteriene. I tillegg skal responsen også levere på overliggende statements til disse, som eventuelt ligger i leverandørens LRS (logget på oppgavesett, kapittel for oppgaven, overliggende oppgave om dette er en deloppgave osv.)
+Responsen må også følge kravene til [xAPI](https://github.com/adlnet/xAPI-Spec/blob/master/xAPI-Communication.md#12-headers) angående hvilke headers som skal følge med. Vi ber dere der også bruke `Last-Modified`, selv om denne fra xAPI er "bør". Dermed kan denne timestampen brukes når det senere spørres om nye data med parameteren `since`.
 
 
 #### Respons for et statement som beskriver at eleven har svart feil på eksempelet over. 
