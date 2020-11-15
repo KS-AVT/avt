@@ -21,43 +21,16 @@
   },
   "concepts": [
     {
-      "id": "https://w3id.org/xapi/avt/activity-types/competence-objective",
+      "id": "http://fagkart.no/avt2/ontology/types/fagkart_tag",
       "type": "ActivityType",
-      "inScheme": "https://w3id.org/xapi/avt",
+      "inScheme": "https://fagkart.no/avt2/xapi",
       "prefLabel": {
-        "en": "competence-objective",
-        "nb": "kompetansemaal"
+        "en": "Subjects Map tag",
+        "nb": "FagKart tag"
       },
       "definition": {
-        "en": "Competence a student shall have attained after completing training at a given level/step.",
-        "nb": "Kompetanse en elev skal ha oppnådd etter endt opplæring på et gitt nivå/trinn."
-      },
-      "relatedMatch": ["http://adlnet.gov/expapi/activities/objective"]
-    },
-    {
-      "id": "https://w3id.org/xapi/avt/activity-types/area-within-the-map",
-      "type": "ActivityType",
-      "inScheme": "https://w3id.org/xapi/avt",
-      "prefLabel": {
-        "en": "area-within-the-map",
-        "nb": "omraade-i-fagkartet"
-      },
-      "definition": {
-        "en": "A subject map is a systematic overview of the various parts of a subject. An area within the map represents a specific part of the subject.",
-        "nb": "Et fagkart er en systematisk oversikt over delene av et fag. Et område i fagkartet representerer en spesifikk del av faget."
-      }
-    },
-    {
-      "id": "https://w3id.org/xapi/avt/activity-types/mathematical-competence-class",
-      "type": "ActivityType",
-      "inScheme": "https://w3id.org/xapi/avt",
-      "prefLabel": {
-        "en": "mathematical-competence-class",
-        "nb": "kompetanseklasse-i-matematikk"
-      },
-      "definition": {
-        "en": "Classification by the PISA competence classes for mathematical literacy.",
-        "nb": "Klassifisering etter PISAs kompetanseklasser i matematikk."
+        "en": "Reference URL to the description of an exercise/item that has been tagged to the FagKart using the Fagkartkoder tool.",
+        "nb": "Reference URL to the description of an oppgave/item som er blitt tagget  til FagKart ved bruk av Fagkartkoder verktøy."
       }
     },
     {
