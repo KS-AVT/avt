@@ -21,7 +21,7 @@
   },
   "concepts": [
     {
-      "id": "https://w3id.org/xapi/avt/activity-types/fagkartgag",
+      "id": "https://w3id.org/xapi/avt/activity-types/fagkart_tag",
       "type": "ActivityType",
       "inScheme": "https://fagkart.no/avt2/xapi",
       "prefLabel": {
