@@ -21,7 +21,7 @@
   },
   "concepts": [
     {
-      "id": "http://fagkart.no/avt2/ontology/types/fagkart_tag",
+      "id": "https://w3id.org/xapi/avt/activity-types/fagkartgag",
       "type": "ActivityType",
       "inScheme": "https://fagkart.no/avt2/xapi",
       "prefLabel": {
@@ -29,8 +29,8 @@
         "nb": "FagKart tag"
       },
       "definition": {
-        "en": "Reference URL to the description of an exercise/item that has been tagged to the FagKart using the Fagkartkoder tool.",
-        "nb": "Reference URL to the description of an oppgave/item som er blitt tagget  til FagKart ved bruk av Fagkartkoder verktøy."
+        "en": "A set of parameters that link an exercise/item to one or more reference models tagged using the fagkartkoder tool (see fagkart.no)",
+        "nb": "Et sett med parametere som knytter en oppgave/item til en eller flere referansemodeller som er merket ved bruk av Fagkartkoderverktøyet (se fagkart.no)"
       }
     },
     {
