@@ -90,7 +90,7 @@ GET ~/statements?agent={"account":{"name":"76a7a061-3c55-430d-8ee0-6f82ec42501f"
             "grouping": [
                 {
                   "objectType": "Activity",
-                  "id": "https://fagkart.no/avt2/ontology/types/fagkart_tag/objects/5ab58270-19ee-5a2b-bbf5-6c2989e4b849:d4571543-71b6-51f2-949d-d0ff4207d874",
+                  "id": "https://fagkart.no/avt2/api/ontology/types/fagkart_tag/objects/5ab58270-19ee-5a2b-bbf5-6c2989e4b849:d4571543-71b6-51f2-949d-d0ff4207d874",
                   "definition": {
                     "name": {
                       "en": "A set of parameters that link an exercise/item to one or more reference models tagged using the fagkartkoder tool (see fagkart.no)",
@@ -232,7 +232,7 @@ GET ~/statements?agent={"account":{"name":"76a7a061-3c55-430d-8ee0-6f82ec42501f"
             "grouping": [
                 {
                     objectType: "Activity",
-                    id: "https://fagkart.no/avt2/ontology/types/fagkart_tag/objects/cb8a4c86-9af7-5b54-9370-f750557e815e:4e425211-bf59-591e-9f87-93347e0bdcb1",
+                    id: "https://fagkart.no/avt2/api/ontology/types/fagkart_tag/objects/cb8a4c86-9af7-5b54-9370-f750557e815e:4e425211-bf59-591e-9f87-93347e0bdcb1",
                     definition: {
                         name: {
                             en: "A set of parameters that link an exercise/item to one or more reference models tagged using the fagkartkoder tool (see fagkart.no)",
@@ -369,7 +369,7 @@ GET ~/statements?agent={"account":{"name":"76a7a061-3c55-430d-8ee0-6f82ec42501f"
             "grouping": [
                 {
                     objectType: "Activity",
-                    id: "https://fagkart.no/avt2/ontology/types/fagkart_tag/objects/cb8a4c86-9af7-5b54-9370-f750557e815e:4e425211-bf59-591e-9f87-93347e0bdcb1",
+                    id: "https://fagkart.no/avt2/api/ontology/types/fagkart_tag/objects/cb8a4c86-9af7-5b54-9370-f750557e815e:4e425211-bf59-591e-9f87-93347e0bdcb1",
                     definition: {
                         name: {
                             en: "A set of parameters that link an exercise/item to one or more reference models tagged using the fagkartkoder tool (see fagkart.no)",
@@ -514,7 +514,7 @@ GET ~/statements?agent={"account":{"name":"76a7a061-3c55-430d-8ee0-6f82ec42501f"
             "grouping": [
                 {
                     objectType: "Activity",
-                    id: "https://fagkart.no/avt2/ontology/types/fagkart_tag/objects/cb8a4c86-9af7-5b54-9370-f750557e815e:4e425211-bf59-591e-9f87-93347e0bdcb1",
+                    id: "https://fagkart.no/avt2/api/ontology/types/fagkart_tag/objects/cb8a4c86-9af7-5b54-9370-f750557e815e:4e425211-bf59-591e-9f87-93347e0bdcb1",
                     definition: {
                         name: {
                             en: "A set of parameters that link an exercise/item to one or more reference models tagged using the fagkartkoder tool (see fagkart.no)",
@@ -611,7 +611,7 @@ GET ~/statements?agent={"account":{"name":"76a7a061-3c55-430d-8ee0-6f82ec42501f"
             "grouping": [
                 {
                   "objectType": "Activity",
-                  "id": "https://fagkart.no/avt2/ontology/types/fagkart_tag/objects/5ab58270-19ee-5a2b-bbf5-6c2989e4b849:d4571543-71b6-51f2-949d-d0ff4207d874",
+                  "id": "https://fagkart.no/avt2/api/ontology/types/fagkart_tag/objects/5ab58270-19ee-5a2b-bbf5-6c2989e4b849:d4571543-71b6-51f2-949d-d0ff4207d874",
                   "definition": {
                     "name": {
                       "en": "A set of parameters that link an exercise/item to one or more reference models tagged using the fagkartkoder tool (see fagkart.no)",
