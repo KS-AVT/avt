@@ -2,6 +2,8 @@
 
 Merk: For å forenkle eksempelomfanget så er det kun én oppgave (nr 6) som er modellert, men kapitteltesten inneholder selvsagt mange flere oppgaver. Informasjonen i eksempelet er til illustrasjon. Derfor er det sikkert enkelte unøyaktigheter, eksempelvis ID og navn på Feide-tjenesten som faktisk benyttes. Dataporten-ID'en til "actor" tilhører testeleven "Kari Nordmann" ved en av Utdanningsetatens testskoler. AVT-prosjektet presiserer at linjen "name": "Kari Nordmann", i "actor"-objektet IKKE skal inkluderes i xAPI-statementet, kun Dataporten-ID.
 
+Oppgaven i eksempelet er tagged mot MAT01-05 -  matematikk 1.-10. trinn - https://www.udir.no/lk20/mat01-05.
+
 xAPI statements i dette eksempelet er veldig likt Eksempel 1, men med unntak av at xAPI statement nr 3 i dette eksempelet viser at et hint har blitt avdekket.
 Utsagnet er basert på "xAPI recipe / oppskrift" hentet fra https://wiki.visualcatch.org/en/assessment.html#readF
 
