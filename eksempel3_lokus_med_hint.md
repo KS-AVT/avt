@@ -206,14 +206,14 @@ GET ~/statements?agent={"account":{"name":"76a7a061-3c55-430d-8ee0-6f82ec42501f"
         "contextActivities": {
             "grouping": [
                 {
-                    objectType:"Activity"
-                    id:"https://fagkart.no/avt2/ontology/types/fagkart_tag/objects/cb8a4c86-9af7-5b54-9370-f750557e815e:4e425211-bf59-591e-9f87-93347e0bdcb1"
+                    objectType: "Activity"
+                    id: "https://fagkart.no/avt2/ontology/types/fagkart_tag/objects/cb8a4c86-9af7-5b54-9370-f750557e815e:4e425211-bf59-591e-9f87-93347e0bdcb1"
                     definition:{
-                        name:{
-                            en:"A set of parameters that link an exercise/item to one or more reference models tagged using the fagkartkoder tool (see fagkart.no)"
-                            nb:"Et sett med parametere som knytter en oppgave/item til en eller flere referansemodeller som er merket ved bruk av Fagkartkoderverktøyet (se fagkart.no)"
+                        name: {
+                            en: "A set of parameters that link an exercise/item to one or more reference models tagged using the fagkartkoder tool (see fagkart.no)"
+                            nb: "Et sett med parametere som knytter en oppgave/item til en eller flere referansemodeller som er merket ved bruk av Fagkartkoderverktøyet (se fagkart.no)"
                         }
-                        type:"https://w3id.org/xapi/avt/activity-types/fagkart_tag"
+                        type: "https://w3id.org/xapi/avt/activity-types/fagkart_tag"
                     }
                 },          
                 {
