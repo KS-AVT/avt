@@ -535,7 +535,7 @@ GET ~/statements?agent={"account":{"name":"76a7a061-3c55-430d-8ee0-6f82ec42501f"
     },
     "object": {
         "objectType": "Activity",
-        "id": "http://www.lokus.no/open/nummer/Nummer-8/4-Tall-og-algebra/Kapitteltest#oppgave-6",
+        "id": "http://www.lokus.no/open/nummer/Nummer-8/4-Tall-og-algebra/Kapitteltest",
         "definition": {
             "name": {
                 "nb-NO": "Kapitteltest / 4 Tall og algebra / Nummer 8 / Nummer - Lokus"
