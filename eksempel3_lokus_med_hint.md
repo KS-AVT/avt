@@ -87,6 +87,17 @@ GET ~/statements?agent={"account":{"name":"76a7a061-3c55-430d-8ee0-6f82ec42501f"
         "contextActivities": {
             "grouping": [
                 {
+                  "objectType": "Activity",
+                  "id": "https://fagkart.no/avt2/ontology/types/fagkart_tag/objects/5ab58270-19ee-5a2b-bbf5-6c2989e4b849:d4571543-71b6-51f2-949d-d0ff4207d874",
+                  "definition": {
+                    "name": {
+                      "en": "A set of parameters that link an exercise/item to one or more reference models tagged using the fagkartkoder tool (see fagkart.no)",
+                      "nb": "Et sett med parametere som knytter en oppgave/item til en eller flere referansemodeller som er merket ved bruk av Fagkartkoderverktøyet (se fagkart.no)"
+                    },
+                    "type": "https://w3id.org/xapi/avt/activity-types/fagkart_tag"
+                  }
+                },
+                {
                     "objectType": "Activity",
                     "id": "https://data-nsr.udir.no/enhet/976820037",
                     "definition": {
@@ -560,6 +571,17 @@ GET ~/statements?agent={"account":{"name":"76a7a061-3c55-430d-8ee0-6f82ec42501f"
         "language": "nb-NO",
         "contextActivities": {
             "grouping": [
+                {
+                  "objectType": "Activity",
+                  "id": "https://fagkart.no/avt2/ontology/types/fagkart_tag/objects/5ab58270-19ee-5a2b-bbf5-6c2989e4b849:d4571543-71b6-51f2-949d-d0ff4207d874",
+                  "definition": {
+                    "name": {
+                      "en": "A set of parameters that link an exercise/item to one or more reference models tagged using the fagkartkoder tool (see fagkart.no)",
+                      "nb": "Et sett med parametere som knytter en oppgave/item til en eller flere referansemodeller som er merket ved bruk av Fagkartkoderverktøyet (se fagkart.no)"
+                    },
+                    "type": "https://w3id.org/xapi/avt/activity-types/fagkart_tag"
+                  }
+                },
                 {
                     "objectType": "Activity",
                     "id": "https://data-nsr.udir.no/enhet/976820037",
