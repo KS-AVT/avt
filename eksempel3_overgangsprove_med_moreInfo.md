@@ -1,4 +1,4 @@
-## Eksempel 4 - Overgangsprøven i matematikk for 4. trinn, med bruk av moreInfo
+## Eksempel 3 - Overgangsprøven i matematikk for 4. trinn, med bruk av moreInfo
 
 Dette eksempelet er som eksempel 1, men med den forskjellen at informasjonselementet `moreInfo` er benyttet (til å angi en URL til en webside som viser hva oppgaven gikk ut på) i stedet for at detaljer om selve oppgaven og dens svaralternativer er angitt i hvert xAPI-utsagn for oppgaven.
 
