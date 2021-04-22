@@ -1,4 +1,4 @@
-## Eksempel 3 - Overgangsprøven i matematikk for 4. trinn, med bruk av moreInfo
+## Eksempel 4 - Overgangsprøven i matematikk for 4. trinn, med bruk av moreInfo
 
 Dette eksempelet er som eksempel 1, men med den forskjellen at informasjonselementet `moreInfo` er benyttet (til å angi en URL til en webside som viser hva oppgaven gikk ut på) i stedet for at detaljer om selve oppgaven og dens svaralternativer er angitt i hvert xAPI-utsagn for oppgaven.
 
@@ -47,16 +47,16 @@ Hent Statements - bruker
 GET ~/statements?agent={"account":{"name":"76a7a061-3c55-430d-8ee0-6f82ec42501f","homePage":"https://docs.dataporten.no"}}
 
 Hent Statements - bruker AND kompetansemål
-GET ~/statements?agent={"account":{"name":"76a7a061-3c55-430d-8ee0-6f82ec42501f","homePage":"https://docs.dataporten.no"}}&activity=http://psi.udir.no/kl06/KM246&related_activities=true
+GET ~/statements?agent={"account":{"name":"76a7a061-3c55-430d-8ee0-6f82ec42501f","homePage":"https://docs.dataporten.no"}}&activity=http://data.udir.no/kl06/K15170&related_activities=true
 
-Hent Statements - bruker AND kompetansemål AND kompetanse klasse
-GET ~/statements?agent={"account":{"name":"76a7a061-3c55-430d-8ee0-6f82ec42501f","homePage":"https://docs.dataporten.no"}}&activity=http://psi.udir.no/kl06/KM246&activity=http://fagkart.no/avt2/ontology/types/competence_class/objects/easy&related_activities=true
+Hent Statements - bruker AND kompetansemål AND vanskegrad
+GET ~/statements?agent={"account":{"name":"76a7a061-3c55-430d-8ee0-6f82ec42501f","homePage":"https://docs.dataporten.no"}}&activity=http://data.udir.no/kl06/K15170&activity=https://fagkart.no/avt/pisa/mathematical-competence-class/competence-class-2&related_activities=true
 
-Hent Statements - bruker AND omrade i fagkart
-GET ~/statements?agent={"account":{"name":"76a7a061-3c55-430d-8ee0-6f82ec42501f","homePage":"https://docs.dataporten.no"}}&activity=https://fagkart.no/avt2/ontology/types/area_in_subject_maps/objects/121ba096-2bee-5a4c-8e0c-c7f781fa2075&related_activities=true
+Hent Statements - bruker AND fagkart
+GET ~/statements?agent={"account":{"name":"76a7a061-3c55-430d-8ee0-6f82ec42501f","homePage":"https://docs.dataporten.no"}}&activity=https://fagkart.no/avt/area-within-the-map/OFK100001&related_activities=true
 
-Hent Statements - bruker AND omrade i fagkart AND kompetanse klasse
-GET ~/statements?agent={"account":{"name":"76a7a061-3c55-430d-8ee0-6f82ec42501f","homePage":"https://docs.dataporten.no"}}&activity=https://fagkart.no/avt2/ontology/types/area_in_subject_maps/objects/121ba096-2bee-5a4c-8e0c-c7f781fa2075&activity=http://fagkart.no/avt2/ontology/types/competence_class/objects/easy&related_activities=true
+Hent Statements - bruker AND fagkart AND vanskegrad
+GET ~/statements?agent={"account":{"name":"76a7a061-3c55-430d-8ee0-6f82ec42501f","homePage":"https://docs.dataporten.no"}}&activity=https://fagkart.no/avt/area-within-the-map/OFK100001&activity=https://fagkart.no/avt/pisa/mathematical-competence-class/competence-class-2&related_activities=true
 ```
 
 #### Eksempel på respons
@@ -120,12 +120,15 @@ GET ~/statements?agent={"account":{"name":"76a7a061-3c55-430d-8ee0-6f82ec42501f"
                 },
                 {
                     "objectType": "Activity",
-                    "id": "https://clientadmin.dataporten-api.no/clients/cc2b2720-4dae-4220-8258-1f6ac8c6dd4f",
+                    "id": "https://api.feide.no/2/sp/1855493",
                     "definition": {
                         "name": {
-                            "nb-NO": "Inspera"
+                            "nb-NO": "Inspera Assessment"
                         },
-                        "type": "https://w3id.org/xapi/avt/activity-types/feide-clientinfo"
+                        "description": {
+                            "nb-NO": "En skybasert prøve og eksamensløsning for skoler og universiteter. Lag og gjennomfør inspirerende prøver, og analyser resultatene for å hjelpe kandidaten til å lære mer"
+                        },
+                        "type": "https://w3id.org/xapi/avt/activity-types/feide-sp-id"
                     }
                 }
             ]
@@ -182,15 +185,43 @@ GET ~/statements?agent={"account":{"name":"76a7a061-3c55-430d-8ee0-6f82ec42501f"
         "contextActivities": {
             "grouping": [
                 {
-                  "objectType": "Activity",
-                  "id": "https://fagkart.no/avt2/api/ontology/types/fagkart_tag/objects/cb8a4c86-9af7-5b54-9370-f750557e815e:b302a00d-e3dd-5791-891c-7cb409bdf50e",
-                  "definition": {
-                    "name": {
-                      "en": "A set of parameters that link an exercise/item to one or more reference models tagged using the fagkartkoder tool (see fagkart.no)",
-                      "nb": "Et sett med parametere som knytter en oppgave/item til en eller flere referansemodeller som er merket ved bruk av Fagkartkoderverktøyet (se fagkart.no)"
-                    },
-                    "type": "https://w3id.org/xapi/avt/activity-types/fagkart_tag"
-                  }
+                    "objectType": "Activity",
+                    "id": "http://data.udir.no/kl06/K15170",
+                    "definition": {
+                        "name": {
+                            "nb-NO": "K15170"
+                        },
+                        "description": {
+                            "nb-NO": "beskrive og bruke plassverdisystemet for de hele tallene, bruke positive og negative hele tall, enkle brøker og desimaltall i praktiske sammenhenger og uttrykke tallstørrelser på varierte måter"
+                        },
+                        "type": "https://w3id.org/xapi/avt/activity-types/competence-objective"
+                    }
+                },
+                {
+                    "objectType": "Activity",
+                    "id": "https://fagkart.no/avt/area-within-the-map/OFKnnnnnn",
+                    "definition": {
+                        "name": {
+                            "nb-NO": "Desimaltallsaddisjon med overgang"
+                        },
+                        "description": {
+                            "nb-NO": "Ett eller flere av leddene i addisjonen har desimaltall og utregningen inneholder en eller flere tier-overganger"
+                        },
+                        "type": "https://w3id.org/xapi/avt/activity-types/area-within-the-map"
+                    }
+                },
+                {
+                    "objectType": "Activity",
+                    "id": "https://fagkart.no/avt/pisa/mathematical-competence-class/competence-class-2",
+                    "definition": {
+                        "name": {
+                            "nb-NO": "Se forbindelser og kunne integrere informasjon som grunnlag for problemløsing"
+                        },
+                        "description": {
+                            "nb-NO": "innebærer at elevene er i stand til å se sammenhenger mellom ulike områder av matematikken og bruke ulike representasjoner av samme fenomen, samt se sammenhenger mellom definisjoner, beviser, eksempler og påstander"
+                        },
+                        "type": "https://w3id.org/xapi/avt/activity-types/mathematical-competence-class"
+                    }
                 },            
                 {
                     "objectType": "Activity",
@@ -214,12 +245,15 @@ GET ~/statements?agent={"account":{"name":"76a7a061-3c55-430d-8ee0-6f82ec42501f"
                 },
                 {
                     "objectType": "Activity",
-                    "id": "https://clientadmin.dataporten-api.no/clients/cc2b2720-4dae-4220-8258-1f6ac8c6dd4f",
+                    "id": "https://api.feide.no/2/sp/1855493",
                     "definition": {
                         "name": {
-                            "nb-NO": "Inspera"
+                            "nb-NO": "Inspera Assessment"
                         },
-                        "type": "https://w3id.org/xapi/avt/activity-types/feide-clientinfo"
+                        "description": {
+                            "nb-NO": "En skybasert prøve og eksamensløsning for skoler og universiteter. Lag og gjennomfør inspirerende prøver, og analyser resultatene for å hjelpe kandidaten til å lære mer"
+                        },
+                        "type": "https://w3id.org/xapi/avt/activity-types/feide-sp-id"
                     }
                 }
             ]
@@ -276,16 +310,44 @@ GET ~/statements?agent={"account":{"name":"76a7a061-3c55-430d-8ee0-6f82ec42501f"
         "contextActivities": {
             "grouping": [
                 {
-                  "objectType": "Activity",
-                  "id": "https://fagkart.no/avt2/api/ontology/types/fagkart_tag/objects/cb8a4c86-9af7-5b54-9370-f750557e815e:b302a00d-e3dd-5791-891c-7cb409bdf50e",
-                  "definition": {
-                    "name": {
-                      "en": "A set of parameters that link an exercise/item to one or more reference models tagged using the fagkartkoder tool (see fagkart.no)",
-                      "nb": "Et sett med parametere som knytter en oppgave/item til en eller flere referansemodeller som er merket ved bruk av Fagkartkoderverktøyet (se fagkart.no)"
-                    },
-                    "type": "https://w3id.org/xapi/avt/activity-types/fagkart_tag"
-                  }
-                },             
+                    "objectType": "Activity",
+                    "id": "http://data.udir.no/kl06/K15170",
+                    "definition": {
+                        "name": {
+                            "nb-NO": "K15170"
+                        },
+                        "description": {
+                            "nb-NO": "beskrive og bruke plassverdisystemet for de hele tallene, bruke positive og negative hele tall, enkle brøker og desimaltall i praktiske sammenhenger og uttrykke tallstørrelser på varierte måter"
+                        },
+                        "type": "https://w3id.org/xapi/avt/activity-types/competence-objective"
+                    }
+                },
+                {
+                    "objectType": "Activity",
+                    "id": "https://fagkart.no/avt/area-within-the-map/OFKnnnnnn",
+                    "definition": {
+                        "name": {
+                            "nb-NO": "Desimaltallsaddisjon med overgang"
+                        },
+                        "description": {
+                            "nb-NO": "Ett eller flere av leddene i addisjonen har desimaltall og utregningen inneholder en eller flere tier-overganger"
+                        },
+                        "type": "https://w3id.org/xapi/avt/activity-types/area-within-the-map"
+                    }
+                },
+                {
+                    "objectType": "Activity",
+                    "id": "https://fagkart.no/avt/pisa/mathematical-competence-class/competence-level-2",
+                    "definition": {
+                        "name": {
+                            "nb-NO": "Se forbindelser og kunne integrere informasjon som grunnlag for problemløsing"
+                        },
+                        "description": {
+                            "nb-NO": "innebærer at elevene er i stand til å se sammenhenger mellom ulike områder av matematikken og bruke ulike representasjoner av samme fenomen, samt se sammenhenger mellom definisjoner, beviser, eksempler og påstander"
+                        },
+                        "type": "https://w3id.org/xapi/avt/activity-types/mathematical-competence-class"
+                    }
+                },            
                 {
                     "objectType": "Activity",
                     "id": "https://data-nsr.udir.no/enhet/976820037",
@@ -308,12 +370,15 @@ GET ~/statements?agent={"account":{"name":"76a7a061-3c55-430d-8ee0-6f82ec42501f"
                 },
                 {
                     "objectType": "Activity",
-                    "id": "https://clientadmin.dataporten-api.no/clients/cc2b2720-4dae-4220-8258-1f6ac8c6dd4f",
+                    "id": "https://api.feide.no/2/sp/1855493",
                     "definition": {
                         "name": {
-                            "nb-NO": "Inspera"
+                            "nb-NO": "Inspera Assessment"
                         },
-                        "type": "https://w3id.org/xapi/avt/activity-types/feide-clientinfo"
+                        "description": {
+                            "nb-NO": "En skybasert prøve og eksamensløsning for skoler og universiteter. Lag og gjennomfør inspirerende prøver, og analyser resultatene for å hjelpe kandidaten til å lære mer"
+                        },
+                        "type": "https://w3id.org/xapi/avt/activity-types/feide-sp-id"
                     }
                 }
             ]
@@ -391,12 +456,15 @@ GET ~/statements?agent={"account":{"name":"76a7a061-3c55-430d-8ee0-6f82ec42501f"
                 },
                 {
                     "objectType": "Activity",
-                    "id": "https://clientadmin.dataporten-api.no/clients/cc2b2720-4dae-4220-8258-1f6ac8c6dd4f",
+                    "id": "https://api.feide.no/2/sp/1855493",
                     "definition": {
                         "name": {
-                            "nb-NO": "Inspera"
+                            "nb-NO": "Inspera Assessment"
                         },
-                        "type": "https://w3id.org/xapi/avt/activity-types/feide-clientinfo"
+                        "description": {
+                            "nb-NO": "En skybasert prøve og eksamensløsning for skoler og universiteter. Lag og gjennomfør inspirerende prøver, og analyser resultatene for å hjelpe kandidaten til å lære mer"
+                        },
+                        "type": "https://w3id.org/xapi/avt/activity-types/feide-sp-id"
                     }
                 }
             ]

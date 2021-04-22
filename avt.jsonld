@@ -21,16 +21,43 @@
   },
   "concepts": [
     {
-      "id": "https://w3id.org/xapi/avt/activity-types/fagkart_tag",
+      "id": "https://w3id.org/xapi/avt/activity-types/competence-objective",
       "type": "ActivityType",
-      "inScheme": "https://fagkart.no/avt2/xapi",
+      "inScheme": "https://w3id.org/xapi/avt",
       "prefLabel": {
-        "en": "Subjects Map tag",
-        "nb": "FagKart tag"
+        "en": "competence-objective",
+        "nb": "kompetansemaal"
       },
       "definition": {
-        "en": "A set of parameters that link an exercise/item to one or more reference models tagged using the fagkartkoder tool (see fagkart.no)",
-        "nb": "Et sett med parametere som knytter en oppgave/item til en eller flere referansemodeller som er merket ved bruk av Fagkartkoderverktøyet (se fagkart.no)"
+        "en": "Competence a student shall have attained after completing training at a given level/step.",
+        "nb": "Kompetanse en elev skal ha oppnådd etter endt opplæring på et gitt nivå/trinn."
+      },
+      "relatedMatch": ["http://adlnet.gov/expapi/activities/objective"]
+    },
+    {
+      "id": "https://w3id.org/xapi/avt/activity-types/area-within-the-map",
+      "type": "ActivityType",
+      "inScheme": "https://w3id.org/xapi/avt",
+      "prefLabel": {
+        "en": "area-within-the-map",
+        "nb": "omraade-i-fagkartet"
+      },
+      "definition": {
+        "en": "A subject map is a systematic overview of the various parts of a subject. An area within the map represents a specific part of the subject.",
+        "nb": "Et fagkart er en systematisk oversikt over delene av et fag. Et område i fagkartet representerer en spesifikk del av faget."
+      }
+    },
+    {
+      "id": "https://w3id.org/xapi/avt/activity-types/mathematical-competence-class",
+      "type": "ActivityType",
+      "inScheme": "https://w3id.org/xapi/avt",
+      "prefLabel": {
+        "en": "mathematical-competence-class",
+        "nb": "kompetanseklasse-i-matematikk"
+      },
+      "definition": {
+        "en": "Classification by the PISA competence classes for mathematical literacy.",
+        "nb": "Klassifisering etter PISAs kompetanseklasser i matematikk."
       }
     },
     {
@@ -62,16 +89,16 @@
       "broadMatch": ["http://activitystrea.ms/schema/1.0/organization"]
     },
     {
-      "id": "https://w3id.org/xapi/avt/activity-types/feide-clientinfo",
+      "id": "https://w3id.org/xapi/avt/activity-types/feide-sp-id",
       "type": "ActivityType",
       "inScheme": "https://w3id.org/xapi/avt",
       "prefLabel": {
-        "en": "feide-clientinfo",
-        "nb"; "feide-klientinfo"
+        "en": "feide-sp-id",
+        "nb"; "feide-tjeneste-id"
       },
       "definition": {
-        "en": "Information about a specific client registered in FEIDE OAuth/OpenID Connect.",
-        "nb": "Informasjon om en spesifikk klient som er registrert i FEIDE OAuth/OpenID Connect."
+        "en": "A specific service provider or application as registered in FEIDE.",
+        "nb": "En spesifikk tjenesteleverandør eller tjeneste som er registrert i FEIDE."
       },
       "relatedMatch": ["http://activitystrea.ms/schema/1.0/application"]
     }
