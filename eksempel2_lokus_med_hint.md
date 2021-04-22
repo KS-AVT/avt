@@ -1,6 +1,8 @@
-## Eksempel 3 - Kapitteltest i matematikk fra Lokus.no, med visning av hint
+## Eksempel 2 - Kapitteltest i matematikk fra Lokus.no, med visning av hint
 
 Merk: For å forenkle eksempelomfanget så er det kun én oppgave (nr 6) som er modellert, men kapitteltesten inneholder selvsagt mange flere oppgaver. Informasjonen i eksempelet er til illustrasjon. Derfor er det sikkert enkelte unøyaktigheter, eksempelvis ID og navn på Feide-tjenesten som faktisk benyttes. Dataporten-ID'en til "actor" tilhører testeleven "Kari Nordmann" ved en av Utdanningsetatens testskoler. AVT-prosjektet presiserer at linjen "name": "Kari Nordmann", i "actor"-objektet IKKE skal inkluderes i xAPI-statementet, kun Dataporten-ID.
+
+Oppgaven i eksempelet er tagged mot MAT01-05 -  matematikk 1.-10. trinn - https://www.udir.no/lk20/mat01-05.
 
 xAPI statements i dette eksempelet er veldig likt Eksempel 1, men med unntak av at xAPI statement nr 3 i dette eksempelet viser at et hint har blitt avdekket.
 Utsagnet er basert på "xAPI recipe / oppskrift" hentet fra https://wiki.visualcatch.org/en/assessment.html#readF
@@ -35,17 +37,11 @@ Nr.|Comment|Who (actor)|Did (verb)|What (object)|
 Hent Statements - bruker
 GET ~/statements?agent={"account":{"name":"76a7a061-3c55-430d-8ee0-6f82ec42501f","homePage":"https://docs.dataporten.no"}}
 
-Hent Statements - bruker AND kompetansemål
-GET ~/statements?agent={"account":{"name":"76a7a061-3c55-430d-8ee0-6f82ec42501f","homePage":"https://docs.dataporten.no"}}&activity=http://data.udir.no/kl06/K15170&related_activities=true
+Hent Statements - bruker AND læreplan
+GET ~/statements?agent={"account":{"name":"76a7a061-3c55-430d-8ee0-6f82ec42501f","homePage":"https://docs.dataporten.no"}}&activity=http://psi.udir.no/kl06/MAT01-05&related_activities=true
 
-Hent Statements - bruker AND kompetansemål AND vanskegrad
-GET ~/statements?agent={"account":{"name":"76a7a061-3c55-430d-8ee0-6f82ec42501f","homePage":"https://docs.dataporten.no"}}&activity=http://data.udir.no/kl06/K15170&activity=https://fagkart.no/avt/pisa/mathematical-competence-class/competence-class-2&related_activities=true
-
-Hent Statements - bruker AND fagkart
-GET ~/statements?agent={"account":{"name":"76a7a061-3c55-430d-8ee0-6f82ec42501f","homePage":"https://docs.dataporten.no"}}&activity=https://fagkart.no/avt/area-within-the-map/OFK100001&related_activities=true
-
-Hent Statements - bruker AND fagkart AND vanskegrad
-GET ~/statements?agent={"account":{"name":"76a7a061-3c55-430d-8ee0-6f82ec42501f","homePage":"https://docs.dataporten.no"}}&activity=https://fagkart.no/avt/area-within-the-map/OFK100001&activity=https://fagkart.no/avt/pisa/mathematical-competence-class/competence-class-2&related_activities=true
+Hent Statements - bruker AND kunnskapsomraade:algebra
+GET ~/statements?agent={"account":{"name":"76a7a061-3c55-430d-8ee0-6f82ec42501f","homePage":"https://docs.dataporten.no"}}&activity=https://fagkart.no/avt2/ontology/types/knowledge_area/objects/f39d563b-950d-5238-ba95-873b232f41bd&related_activities=true
 ```
 
 #### Eksempel på respons
@@ -86,6 +82,17 @@ GET ~/statements?agent={"account":{"name":"76a7a061-3c55-430d-8ee0-6f82ec42501f"
         "language": "nb-NO",
         "contextActivities": {
             "grouping": [
+                {
+                  "objectType": "Activity",
+                  "id": "https://fagkart.no/avt2/api/ontology/types/fagkart_tag/objects/5ab58270-19ee-5a2b-bbf5-6c2989e4b849:d4571543-71b6-51f2-949d-d0ff4207d874",
+                  "definition": {
+                    "name": {
+                      "en": "A set of parameters that link an exercise/item to one or more reference models tagged using the fagkartkoder tool (see fagkart.no)",
+                      "nb": "Et sett med parametere som knytter en oppgave/item til en eller flere referansemodeller som er merket ved bruk av Fagkartkoderverktøyet (se fagkart.no)"
+                    },
+                    "type": "https://w3id.org/xapi/avt/activity-types/fagkart_tag"
+                  }
+                },
                 {
                     "objectType": "Activity",
                     "id": "https://data-nsr.udir.no/enhet/976820037",
@@ -204,46 +211,30 @@ GET ~/statements?agent={"account":{"name":"76a7a061-3c55-430d-8ee0-6f82ec42501f"
         "platform": "Lokus",
         "language": "nb-NO",
         "contextActivities": {
+            "parent": [
+                {
+                    "objectType": "Activity",
+                    "id": "http://www.lokus.no/open/nummer/Nummer-8/4-Tall-og-algebra/Kapitteltest",
+                    "definition": {
+                        "name": {
+                            "nb-NO": "Kapitteltest / 4 Tall og algebra / Nummer 8 / Nummer - Lokus"
+                        },
+                        "type": "http://adlnet.gov/expapi/activities/assessment"
+                    }
+                }
+            ],
             "grouping": [
                 {
-                    "objectType": "Activity",
-                    "id": "http://data.udir.no/kl06/K15170",
-                    "definition": {
-                        "name": {
-                            "nb-NO": "K15170"
+                    objectType: "Activity",
+                    id: "https://fagkart.no/avt2/api/ontology/types/fagkart_tag/objects/cb8a4c86-9af7-5b54-9370-f750557e815e:4e425211-bf59-591e-9f87-93347e0bdcb1",
+                    definition: {
+                        name: {
+                            en: "A set of parameters that link an exercise/item to one or more reference models tagged using the fagkartkoder tool (see fagkart.no)",
+                            nb: "Et sett med parametere som knytter en oppgave/item til en eller flere referansemodeller som er merket ved bruk av Fagkartkoderverktøyet (se fagkart.no)"
                         },
-                        "description": {
-                            "nb-NO": "beskrive og bruke plassverdisystemet for de hele tallene, bruke positive og negative hele tall, enkle brøker og desimaltall i praktiske sammenhenger og uttrykke tallstørrelser på varierte måter"
-                        },
-                        "type": "https://w3id.org/xapi/avt/activity-types/competence-objective"
+                        type: "https://w3id.org/xapi/avt/activity-types/fagkart_tag"
                     }
-                },
-                {
-                    "objectType": "Activity",
-                    "id": "https://fagkart.no/avt/area-within-the-map/OFKnnnnnn",
-                    "definition": {
-                        "name": {
-                            "nb-NO": "Desimaltallsaddisjon med overgang"
-                        },
-                        "description": {
-                            "nb-NO": "Ett eller flere av leddene i addisjonen har desimaltall og utregningen inneholder en eller flere tier-overganger"
-                        },
-                        "type": "https://w3id.org/xapi/avt/activity-types/area-within-the-map"
-                    }
-                },
-                {
-                    "objectType": "Activity",
-                    "id": "https://fagkart.no/avt/pisa/mathematical-competence-class/competence-class-2",
-                    "definition": {
-                        "name": {
-                            "nb-NO": "Se forbindelser og kunne integrere informasjon som grunnlag for problemløsing"
-                        },
-                        "description": {
-                            "nb-NO": "innebærer at elevene er i stand til å se sammenhenger mellom ulike områder av matematikken og bruke ulike representasjoner av samme fenomen, samt se sammenhenger mellom definisjoner, beviser, eksempler og påstander"
-                        },
-                        "type": "https://w3id.org/xapi/avt/activity-types/mathematical-competence-class"
-                    }
-                },            
+                },          
                 {
                     "objectType": "Activity",
                     "id": "https://data-nsr.udir.no/enhet/976820037",
@@ -357,46 +348,30 @@ GET ~/statements?agent={"account":{"name":"76a7a061-3c55-430d-8ee0-6f82ec42501f"
         "platform": "Lokus",
         "language": "nb-NO",
         "contextActivities": {
+            "parent": [
+                {
+                    "objectType": "Activity",
+                    "id": "http://www.lokus.no/open/nummer/Nummer-8/4-Tall-og-algebra/Kapitteltest",
+                    "definition": {
+                        "name": {
+                            "nb-NO": "Kapitteltest / 4 Tall og algebra / Nummer 8 / Nummer - Lokus"
+                        },
+                        "type": "http://adlnet.gov/expapi/activities/assessment"
+                    }
+                }
+            ],
             "grouping": [
                 {
-                    "objectType": "Activity",
-                    "id": "http://data.udir.no/kl06/K15170",
-                    "definition": {
-                        "name": {
-                            "nb-NO": "K15170"
+                    objectType: "Activity",
+                    id: "https://fagkart.no/avt2/api/ontology/types/fagkart_tag/objects/cb8a4c86-9af7-5b54-9370-f750557e815e:4e425211-bf59-591e-9f87-93347e0bdcb1",
+                    definition: {
+                        name: {
+                            en: "A set of parameters that link an exercise/item to one or more reference models tagged using the fagkartkoder tool (see fagkart.no)",
+                            nb: "Et sett med parametere som knytter en oppgave/item til en eller flere referansemodeller som er merket ved bruk av Fagkartkoderverktøyet (se fagkart.no)"
                         },
-                        "description": {
-                            "nb-NO": "beskrive og bruke plassverdisystemet for de hele tallene, bruke positive og negative hele tall, enkle brøker og desimaltall i praktiske sammenhenger og uttrykke tallstørrelser på varierte måter"
-                        },
-                        "type": "https://w3id.org/xapi/avt/activity-types/competence-objective"
+                        type: "https://w3id.org/xapi/avt/activity-types/fagkart_tag"
                     }
-                },
-                {
-                    "objectType": "Activity",
-                    "id": "https://fagkart.no/avt/area-within-the-map/OFKnnnnnn",
-                    "definition": {
-                        "name": {
-                            "nb-NO": "Desimaltallsaddisjon med overgang"
-                        },
-                        "description": {
-                            "nb-NO": "Ett eller flere av leddene i addisjonen har desimaltall og utregningen inneholder en eller flere tier-overganger"
-                        },
-                        "type": "https://w3id.org/xapi/avt/activity-types/area-within-the-map"
-                    }
-                },
-                {
-                    "objectType": "Activity",
-                    "id": "https://fagkart.no/avt/pisa/mathematical-competence-class/competence-class-2",
-                    "definition": {
-                        "name": {
-                            "nb-NO": "Se forbindelser og kunne integrere informasjon som grunnlag for problemløsing"
-                        },
-                        "description": {
-                            "nb-NO": "innebærer at elevene er i stand til å se sammenhenger mellom ulike områder av matematikken og bruke ulike representasjoner av samme fenomen, samt se sammenhenger mellom definisjoner, beviser, eksempler og påstander"
-                        },
-                        "type": "https://w3id.org/xapi/avt/activity-types/mathematical-competence-class"
-                    }
-                },            
+                },              
                 {
                     "objectType": "Activity",
                     "id": "https://data-nsr.udir.no/enhet/976820037",
@@ -518,46 +493,30 @@ GET ~/statements?agent={"account":{"name":"76a7a061-3c55-430d-8ee0-6f82ec42501f"
         "platform": "Lokus",
         "language": "nb-NO",
         "contextActivities": {
+            "parent": [
+                {
+                    "objectType": "Activity",
+                    "id": "http://www.lokus.no/open/nummer/Nummer-8/4-Tall-og-algebra/Kapitteltest",
+                    "definition": {
+                        "name": {
+                            "nb-NO": "Kapitteltest / 4 Tall og algebra / Nummer 8 / Nummer - Lokus"
+                        },
+                        "type": "http://adlnet.gov/expapi/activities/assessment"
+                    }
+                }
+            ],
             "grouping": [
                 {
-                    "objectType": "Activity",
-                    "id": "http://data.udir.no/kl06/K15170",
-                    "definition": {
-                        "name": {
-                            "nb-NO": "K15170"
+                    objectType: "Activity",
+                    id: "https://fagkart.no/avt2/api/ontology/types/fagkart_tag/objects/cb8a4c86-9af7-5b54-9370-f750557e815e:4e425211-bf59-591e-9f87-93347e0bdcb1",
+                    definition: {
+                        name: {
+                            en: "A set of parameters that link an exercise/item to one or more reference models tagged using the fagkartkoder tool (see fagkart.no)",
+                            nb: "Et sett med parametere som knytter en oppgave/item til en eller flere referansemodeller som er merket ved bruk av Fagkartkoderverktøyet (se fagkart.no)"
                         },
-                        "description": {
-                            "nb-NO": "beskrive og bruke plassverdisystemet for de hele tallene, bruke positive og negative hele tall, enkle brøker og desimaltall i praktiske sammenhenger og uttrykke tallstørrelser på varierte måter"
-                        },
-                        "type": "https://w3id.org/xapi/avt/activity-types/competence-objective"
+                        type: "https://w3id.org/xapi/avt/activity-types/fagkart_tag"
                     }
-                },
-                {
-                    "objectType": "Activity",
-                    "id": "https://fagkart.no/avt/area-within-the-map/OFKnnnnnn",
-                    "definition": {
-                        "name": {
-                            "nb-NO": "Desimaltallsaddisjon med overgang"
-                        },
-                        "description": {
-                            "nb-NO": "Ett eller flere av leddene i addisjonen har desimaltall og utregningen inneholder en eller flere tier-overganger"
-                        },
-                        "type": "https://w3id.org/xapi/avt/activity-types/area-within-the-map"
-                    }
-                },
-                {
-                    "objectType": "Activity",
-                    "id": "https://fagkart.no/avt/pisa/mathematical-competence-class/competence-class-2",
-                    "definition": {
-                        "name": {
-                            "nb-NO": "Se forbindelser og kunne integrere informasjon som grunnlag for problemløsing"
-                        },
-                        "description": {
-                            "nb-NO": "innebærer at elevene er i stand til å se sammenhenger mellom ulike områder av matematikken og bruke ulike representasjoner av samme fenomen, samt se sammenhenger mellom definisjoner, beviser, eksempler og påstander"
-                        },
-                        "type": "https://w3id.org/xapi/avt/activity-types/mathematical-competence-class"
-                    }
-                },            
+                },           
                 {
                     "objectType": "Activity",
                     "id": "https://data-nsr.udir.no/enhet/976820037",
@@ -619,7 +578,7 @@ GET ~/statements?agent={"account":{"name":"76a7a061-3c55-430d-8ee0-6f82ec42501f"
     },
     "object": {
         "objectType": "Activity",
-        "id": "http://www.lokus.no/open/nummer/Nummer-8/4-Tall-og-algebra/Kapitteltest#oppgave-6",
+        "id": "http://www.lokus.no/open/nummer/Nummer-8/4-Tall-og-algebra/Kapitteltest",
         "definition": {
             "name": {
                 "nb-NO": "Kapitteltest / 4 Tall og algebra / Nummer 8 / Nummer - Lokus"
@@ -644,6 +603,17 @@ GET ~/statements?agent={"account":{"name":"76a7a061-3c55-430d-8ee0-6f82ec42501f"
         "language": "nb-NO",
         "contextActivities": {
             "grouping": [
+                {
+                  "objectType": "Activity",
+                  "id": "https://fagkart.no/avt2/api/ontology/types/fagkart_tag/objects/5ab58270-19ee-5a2b-bbf5-6c2989e4b849:d4571543-71b6-51f2-949d-d0ff4207d874",
+                  "definition": {
+                    "name": {
+                      "en": "A set of parameters that link an exercise/item to one or more reference models tagged using the fagkartkoder tool (see fagkart.no)",
+                      "nb": "Et sett med parametere som knytter en oppgave/item til en eller flere referansemodeller som er merket ved bruk av Fagkartkoderverktøyet (se fagkart.no)"
+                    },
+                    "type": "https://w3id.org/xapi/avt/activity-types/fagkart_tag"
+                  }
+                },
                 {
                     "objectType": "Activity",
                     "id": "https://data-nsr.udir.no/enhet/976820037",

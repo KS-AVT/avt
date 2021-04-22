@@ -16,8 +16,6 @@ Eksemplene på xAPI-utsagn inkluderer å vise muligheter for følgende informasj
 
 ## [Eksempel 1 - Overgangsprøven i matematikk for 4. trinn](eksempel1_overgangsprove.md)
 
-## [Eksempel 2 - Fysikkoppgave på Viten.no](eksempel2_viten.md)
+## [Eksempel 2 - Kapitteltest på Lokus.no](eksempel2_lokus_med_hint.md)
 
-## [Eksempel 3 - Kapitteltest på Lokus.no](eksempel3_lokus_med_hint.md)
-
-## [Eksempel 4 - Overgangsprøven i matematikk for 4. trinn, med bruk av moreInfo](eksempel4_overgangsprove_med_moreInfo.md)
+## [Eksempel 3 - Overgangsprøven i matematikk for 4. trinn, med bruk av moreInfo](eksempel3_overgangsprove_med_moreInfo.md)
