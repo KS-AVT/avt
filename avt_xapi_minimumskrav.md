@@ -6,13 +6,13 @@ Listen under spesifiserer minimumskrav for xAPI statements i AVT prosjektet.
 
 * Respons:
   * Actor: Må være en “Nye feide”- (aka Dataporten-) bruker. Tjenesten må altså være en dataporten tjeneste.
-  * Verb: 
-    * Required: [Answered](http://adlnet.gov/expapi/verbs/answered). Dette blir vanligvis brukt om enkeltitems (enkeltoppgaver). 
+  * Verb:
+    * Required: [Answered](http://adlnet.gov/expapi/verbs/answered). Dette blir vanligvis brukt om enkeltitems (enkeltoppgaver).
     For et læremiddel med sider (pages) kan man bruke [Completed](http://adlnet.gov/expapi/verbs/completed), men man kan også være pragmatisk og bruke Answered også her.
-  * Object: 
+  * Object:
     * Required: Id og definisjon (med navn og type).
-  * Result: 
-    * Required: Score (min, max, raw, scaled) og success.  
+  * Result:
+    * Required: Score (min, max, raw, scaled) og success.
     * Eksempel: I noen tilfeller vil min være 0, max være 1, raw være 0 (om item/oppgave ikke er fullført) eller 1 (om item/oppgave er riktig fullført) og også scaled være 0/1.
   * Context:
     * Required: Skoleeier, skole og tjenesteleverandør (feide-clientinfo).
