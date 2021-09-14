@@ -1,4 +1,4 @@
-## xAPI Minimumskrav ##
+## xAPI Minimumskrav
 
 Listen under spesifiserer minimumskrav for xAPI statements i AVT prosjektet.
 

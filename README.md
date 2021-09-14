@@ -19,3 +19,6 @@ Prosjektet reviderer også dokumentet "Eksempler på læringsaktiviteter som «E
 - Syntaks for kallene som gir responsene i eksemplene legges til
 
 [Eksempler](eksempler.md)
+
+## xAPI minimumskrav
+* [Minimumskrav](avt_xapi_minimumskrav.md) for xAPI statements i AVT prosjektet
