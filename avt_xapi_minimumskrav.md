@@ -14,7 +14,7 @@
     * Eksempel: I noen tilfeller vil min være 0, max være 1, raw være 0 (om item/oppgave ikke er fullført) eller 1 (om item/oppgave er riktig fullført) og også scaled være 0/1.
   * Context:
     * Required: Skoleeier, skole og tjenesteleverandør (feide-clientinfo).
-    * Recommended: Hver activity bør helst ha med informasjon om fagkart (tagget ved hjelp av verktøyet [Fagkart](https://fagkart.no/#/). Det kan dog være tilfeller der en activity mangler fagkartinformasjon fordi aktivitetens områder ikke er dekket av fagkartet ennå. Da kan man legge til annen relatert informasjon om aktiviteten. Det er en fordel å merke så detaljert som mulig.
+    * Recommended: Hver activity bør helst ha med informasjon om fagkart (tagget ved hjelp av verktøyet [Fagkart](https://fagkart.no/#/)). Det kan dog være tilfeller der en activity mangler fagkartinformasjon fordi aktivitetens områder ikke er dekket av fagkartet ennå. Da kan man legge til annen relatert informasjon om aktiviteten. Det er en fordel å merke så detaljert som mulig.
 
 
 [AVT eksemplene](https://github.com/KS-AVT/avt/blob/AVT2/eksempler.md) viser hvordan minimumkravene kan overholdes i praksis.
