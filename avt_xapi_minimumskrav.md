@@ -1,5 +1,7 @@
 ## xAPI Minimumskrav ##
 
+Listen under spesifiserer minimumskrav for xAPI statements i AVT prosjektet.
+
 * Man må ha med Required-elementene fra selve xAPI-spesifikasjonen ([se her for mer info](https://github.com/adlnet/xAPI-Spec/blob/master/xAPI-Data.md#24-statement-properties)).
 
 * Respons:
