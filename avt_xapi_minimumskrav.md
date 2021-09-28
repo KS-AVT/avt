@@ -8,13 +8,17 @@ Listen under spesifiserer minimumskrav for xAPI statements i AVT prosjektet.
   * Actor: Må være en “Nye feide”- (aka Dataporten-) bruker. Tjenesten må altså være en dataporten tjeneste.
   * Verb:
     * Required: [Answered](http://adlnet.gov/expapi/verbs/answered). Dette blir vanligvis brukt om enkeltitems (enkeltoppgaver).
-    For et læremiddel med sider (pages) kan man bruke [Completed](http://adlnet.gov/expapi/verbs/completed), men i dette tilfellet vil vi være pragmatisk og bruke Answered også her.
+    For et læremiddel med sider (pages) kan man bruke verbet Completed, men i dette tilfellet vil vi være pragmatisk og bruke Answered også her.
   * Object:
-    * Required: Id og definisjon (med navn og type).
+    * Required: [Id](https://github.com/adlnet/xAPI-Spec/blob/master/xAPI-Data.md#acturi) og [definisjon (navn og type)](https://github.com/adlnet/xAPI-Spec/blob/master/xAPI-Data.md#activity-definition).
   * Result:
-    * Required: Score (min, max, raw, scaled) og success.
+    * Required: [Score (min, max, raw, scaled)](https://github.com/adlnet/xAPI-Spec/blob/master/xAPI-Data.md#2451-score) og [success](https://github.com/adlnet/xAPI-Spec/blob/master/xAPI-Data.md#details-12).
       * Eksempel: I noen tilfeller vil min være 0, max være 1, raw være 0 (om item/oppgave ikke er fullført) eller 1 (om item/oppgave er riktig fullført) og også scaled være 0/1.
-    * Required extensions: Dersom man har informasjon om elevers hint og forsøk er dette også påkrevd informasjon (se eksempler for mer informasjon).
+    * Required extensions: Dersom man har informasjon om elevers bruk av hint og antall forsøk (attempts) på en oppgave er denne informasjonen også påkrevd informasjon. Informasjonen legges inn ved hjelp av extensions definert av AVT prosjektet: 
+      * https://w3id.org/xapi/avt/result-extensions/max-hints (maks antall hint - mulig for oppgave)
+      * https://w3id.org/xapi/avt/result-extensions/hints-used (faktiske hint brukt for oppgave)
+      * https://w3id.org/xapi/avt/result-extensions/attempts (antall oppgaveforsøk)
+      * Se eksempler for mer informasjon om bruk av disse extensions.
   * Context:
     * Required: Skoleeier, skole og tjenesteleverandør (feide-clientinfo).
     * Required: Hver activity må ha med informasjon om fagkart (tagget ved hjelp av verktøyet [Fagkart](https://fagkart.no/#/)).

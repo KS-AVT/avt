@@ -10,32 +10,13 @@ Skjermdump av oppgaven:
 
 Nr.|Comment|Who (actor)|Did (verb)|What (object)|
 ---------|------------------|-------|---------|------|
-|[2](#2)|Learner has answered a single question (without success) in "Overgangsprøve i regning 4. trinn 2017"|Kari Nordmann|besvarte|Overgangsprøve i regning 4. trinn 2017: Oppgave 23|
-|[3](#3)|Learner has answered a single question (with success) in "Overgangsprøve i regning 4. trinn"|Kari Nordmann|besvarte|Overgangsprøve i regning 4. trinn 2017: Oppgave 23|
+|[1](#1)|Learner has answered a single question (without success) in "Overgangsprøve i regning 4. trinn 2017"|Kari Nordmann|besvarte|Overgangsprøve i regning 4. trinn 2017: Oppgave 23|
+|[2](#2)|Learner has answered a single question (with success) in "Overgangsprøve i regning 4. trinn"|Kari Nordmann|besvarte|Overgangsprøve i regning 4. trinn 2017: Oppgave 23|
 
-#### Eksempel på kall
+#### Eksempel på xAPI statement
 
-```
-Hent Statements - bruker
-GET ~/statements?agent={"account":{"name":"76a7a061-3c55-430d-8ee0-6f82ec42501f","homePage":"https://docs.dataporten.no"}}
-
-Hent Statements - bruker AND kompetansemål
-GET ~/statements?agent={"account":{"name":"76a7a061-3c55-430d-8ee0-6f82ec42501f","homePage":"https://docs.dataporten.no"}}&activity=http://psi.udir.no/kl06/KM246&related_activities=true
-
-Hent Statements - bruker AND kompetansemål AND kompetanse klasse
-GET ~/statements?agent={"account":{"name":"76a7a061-3c55-430d-8ee0-6f82ec42501f","homePage":"https://docs.dataporten.no"}}&activity=http://psi.udir.no/kl06/KM246&activity=http://fagkart.no/avt2/ontology/types/competence_class/objects/easy&related_activities=true
-
-Hent Statements - bruker AND omrade i fagkart
-GET ~/statements?agent={"account":{"name":"76a7a061-3c55-430d-8ee0-6f82ec42501f","homePage":"https://docs.dataporten.no"}}&activity=https://fagkart.no/avt2/ontology/types/area_in_subject_maps/objects/121ba096-2bee-5a4c-8e0c-c7f781fa2075&related_activities=true
-
-Hent Statements - bruker AND omrade i fagkart AND kompetanse klasse
-GET ~/statements?agent={"account":{"name":"76a7a061-3c55-430d-8ee0-6f82ec42501f","homePage":"https://docs.dataporten.no"}}&activity=https://fagkart.no/avt2/ontology/types/area_in_subject_maps/objects/121ba096-2bee-5a4c-8e0c-c7f781fa2075&activity=http://fagkart.no/avt2/ontology/types/competence_class/objects/easy&related_activities=true
-```
-
-#### Eksempel på respons
-
-<a name="2"></a>
-#### 2. Learner has answered a single question (without success) in "Overgangsprøve i regning 4. trinn 2017"
+<a name="1"></a>
+#### 1. Learner has answered a single question (without success) in "Overgangsprøve i regning 4. trinn 2017"
 ``` Javascript
 {
     "id": "a0dbae37-c87a-4965-b09b-c25d6a997eac",
@@ -61,11 +42,7 @@ GET ~/statements?agent={"account":{"name":"76a7a061-3c55-430d-8ee0-6f82ec42501f"
             "name": {
                 "nb-NO": "Overgangsprøven i regning, 4. trinn: Oppgave 23"
             },
-            "description": {
-                "nb-NO": "Sofie hoppet 2,7 m i lengde. Neste gang hoppet hun 3,4 m.\nHvor langt hoppet hun til sammen?"
-            },
-            "type": "http://adlnet.gov/expapi/activities/cmi.interaction",
-            "interactionType": "choice"
+            "type": "http://adlnet.gov/expapi/activities/cmi.interaction"
         }
     },
     "result": {
@@ -77,6 +54,11 @@ GET ~/statements?agent={"account":{"name":"76a7a061-3c55-430d-8ee0-6f82ec42501f"
             "max": 3.0,
             "raw": 0.0,
             "scaled": 0.0
+        },
+        "extensions": {
+	        "https://w3id.org/xapi/avt/result-extensions/max-hints": 0,
+	        "https://w3id.org/xapi/avt/result-extensions/hints-used": 0,
+	        "https://w3id.org/xapi/avt/result-extensions/attempts": 1
         }
     },
     "context": {
@@ -95,6 +77,36 @@ GET ~/statements?agent={"account":{"name":"76a7a061-3c55-430d-8ee0-6f82ec42501f"
                     },
                     "type": "https://w3id.org/xapi/avt/activity-types/fagkart_tag"
                   }
+                },
+                {
+                    "objectType": "Activity",
+                    "id": "https://data-nsr.udir.no/enhet/976820037",
+                    "definition": {
+                        "name": {
+                            "nb-NO": "Oslo kommune Utdanningsetaten"
+                        },
+                        "type": "https://w3id.org/xapi/avt/activity-types/school-owner"
+                    }
+                },
+                {
+                    "objectType": "Activity",
+                    "id": "https://data-nsr.udir.no/enhet/974589648",
+                    "definition": {
+                        "name": {
+                            "nb-NO": "Abildsø skole"
+                        },
+                        "type": "https://w3id.org/xapi/avt/activity-types/school"
+                    }
+                },
+                {
+                    "objectType": "Activity",
+                    "id": "https://clientadmin.dataporten-api.no/clients/cc2b2720-4dae-4220-8258-1f6ac8c6dd4f",
+                    "definition": {
+                        "name": {
+                            "nb-NO": "Inspera"
+                        },
+                        "type": "https://w3id.org/xapi/avt/activity-types/feide-clientinfo"
+                    }
                 }
             ]
         }
@@ -102,8 +114,8 @@ GET ~/statements?agent={"account":{"name":"76a7a061-3c55-430d-8ee0-6f82ec42501f"
 }
 ```
 
-<a name="3"></a>
-#### 3. Learner has answered a single question (with success) in "Overgangsprøve i regning 4. trinn"
+<a name="2"></a>
+#### 2. Learner has answered a single question (with success) in "Overgangsprøve i regning 4. trinn"
 ``` Javascript
 {
     "id": "2741f96e-5701-4def-97f9-6761241ee29d",
@@ -129,11 +141,7 @@ GET ~/statements?agent={"account":{"name":"76a7a061-3c55-430d-8ee0-6f82ec42501f"
             "name": {
                 "nb-NO": "Overgangsprøven i regning, 4. trinn: Oppgave 23"
             },
-            "description": {
-                "nb-NO": "Sofie hoppet 2,7 m i lengde. Neste gang hoppet hun 3,4 m. Hvor langt hoppet hun til sammen?"
-            },
-            "type": "http://adlnet.gov/expapi/activities/cmi.interaction",
-            "interactionType": "choice"
+            "type": "http://adlnet.gov/expapi/activities/cmi.interaction"
         }
     },
     "result": {
@@ -145,6 +153,11 @@ GET ~/statements?agent={"account":{"name":"76a7a061-3c55-430d-8ee0-6f82ec42501f"
             "max": 3.0,
             "raw": 3.0,
             "scaled": 1.0
+        },
+        "extensions": {
+	        "https://w3id.org/xapi/avt/result-extensions/max-hints": 0,
+	        "https://w3id.org/xapi/avt/result-extensions/hints-used": 0,
+	        "https://w3id.org/xapi/avt/result-extensions/attempts": 1
         }
     },
     "context": {
@@ -163,9 +176,60 @@ GET ~/statements?agent={"account":{"name":"76a7a061-3c55-430d-8ee0-6f82ec42501f"
                     },
                     "type": "https://w3id.org/xapi/avt/activity-types/fagkart_tag"
                   }
+                },
+                {
+                    "objectType": "Activity",
+                    "id": "https://data-nsr.udir.no/enhet/976820037",
+                    "definition": {
+                        "name": {
+                            "nb-NO": "Oslo kommune Utdanningsetaten"
+                        },
+                        "type": "https://w3id.org/xapi/avt/activity-types/school-owner"
+                    }
+                },
+                {
+                    "objectType": "Activity",
+                    "id": "https://data-nsr.udir.no/enhet/974589648",
+                    "definition": {
+                        "name": {
+                            "nb-NO": "Abildsø skole"
+                        },
+                        "type": "https://w3id.org/xapi/avt/activity-types/school"
+                    }
+                },
+                {
+                    "objectType": "Activity",
+                    "id": "https://clientadmin.dataporten-api.no/clients/cc2b2720-4dae-4220-8258-1f6ac8c6dd4f",
+                    "definition": {
+                        "name": {
+                            "nb-NO": "Inspera"
+                        },
+                        "type": "https://w3id.org/xapi/avt/activity-types/feide-clientinfo"
+                    }
                 }
             ]
         }
     }
 }
 ```
+
+### Eksempel på xAPI kall (for leverandører med egen LRS)
+
+```
+Hent Statements - bruker
+GET ~/statements?agent={"account":{"name":"76a7a061-3c55-430d-8ee0-6f82ec42501f","homePage":"https://docs.dataporten.no"}}
+
+Hent Statements - bruker AND kompetansemål
+GET ~/statements?agent={"account":{"name":"76a7a061-3c55-430d-8ee0-6f82ec42501f","homePage":"https://docs.dataporten.no"}}&activity=http://psi.udir.no/kl06/KM246&related_activities=true
+
+Hent Statements - bruker AND kompetansemål AND kompetanse klasse
+GET ~/statements?agent={"account":{"name":"76a7a061-3c55-430d-8ee0-6f82ec42501f","homePage":"https://docs.dataporten.no"}}&activity=http://psi.udir.no/kl06/KM246&activity=http://fagkart.no/avt2/ontology/types/competence_class/objects/easy&related_activities=true
+
+Hent Statements - bruker AND omrade i fagkart
+GET ~/statements?agent={"account":{"name":"76a7a061-3c55-430d-8ee0-6f82ec42501f","homePage":"https://docs.dataporten.no"}}&activity=https://fagkart.no/avt2/ontology/types/area_in_subject_maps/objects/121ba096-2bee-5a4c-8e0c-c7f781fa2075&related_activities=true
+
+Hent Statements - bruker AND omrade i fagkart AND kompetanse klasse
+GET ~/statements?agent={"account":{"name":"76a7a061-3c55-430d-8ee0-6f82ec42501f","homePage":"https://docs.dataporten.no"}}&activity=https://fagkart.no/avt2/ontology/types/area_in_subject_maps/objects/121ba096-2bee-5a4c-8e0c-c7f781fa2075&activity=http://fagkart.no/avt2/ontology/types/competence_class/objects/easy&related_activities=true
+```
+
+REST API kall i eksemplene over vil returnere aktuelle xAPI statements fra LRS.
