@@ -1,4 +1,4 @@
-# Eksempler på kall mot og respons fra leverandørenes aktivitetsdata-API
+# Eksempler på xAPI datastruktur, samt API kall for leverandører med egen LRS
 Deltakende leverandører i AVT-prosjektet forholder seg til dette dokumentet i stedet for tidligere utsendte dokumenter. Det er her gjort noen forenklinger av xAPI syntaks og valg av xAPI verb, noe som ideelt vil gjøre det mindre arbeidskrevende for leverandører å levere data.
 
 Det er valgt ut to eksempler, 1) fra en tenkt besvarelse av en matematikk-oppgave i "Overgangsprøven i matematikk for 4. trinn" som benyttes i grunnskolen i Oslo, og 2) fra en tenkt kapitteltest på Lokus.no.

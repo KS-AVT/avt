@@ -5,10 +5,10 @@ Merk: For å forenkle eksempelomfanget så er det kun én oppgave (nr 6) som er 
 Oppgaven i eksempelet er tagged mot MAT01-05 -  matematikk 1.-10. trinn - https://www.udir.no/lk20/mat01-05.
 
 Skjermdump av oppgaven (før hint vises):
-![](bilder/Eksempel%203%20-%20Lokus%20kapitteltest%20oppgave%206.jpg)
+![](bilder/Eksempel%202%20-%20Lokus%20kapitteltest%20oppgave%206.jpg)
 
 Utsnitt av skjermbilde etter at hint er avdekket:
-![](bilder/Eksempel%203%20-%20Hint.jpg)
+![](bilder/Eksempel%202%20-%20Hint.jpg)
 
 
 ### Oversikt over xAPI-statements for eksempel 2 (kapitteltest fra Lokus.no)

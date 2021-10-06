@@ -4,7 +4,7 @@ Listen under spesifiserer minimumskrav for xAPI statements i AVT prosjektet.
 
 * Man må ha med Required-elementene fra selve xAPI-spesifikasjonen ([se her for mer info](https://github.com/adlnet/xAPI-Spec/blob/master/xAPI-Data.md#24-statement-properties)).
 
-* Respons:
+* xAPI datastruktur:
   * Actor: Må være en “Nye feide”- (aka Dataporten-) bruker. Tjenesten må altså være en dataporten tjeneste.
   * Verb:
     * Required: [Answered](http://adlnet.gov/expapi/verbs/answered). Dette blir vanligvis brukt om enkeltitems (enkeltoppgaver).
@@ -23,6 +23,6 @@ Listen under spesifiserer minimumskrav for xAPI statements i AVT prosjektet.
     * Required: Skoleeier, skole og tjenesteleverandør (feide-clientinfo).
     * Required: Hver activity må ha med informasjon om fagkart (tagget ved hjelp av verktøyet [Fagkart](https://fagkart.no/#/)).
 
-[AVT eksemplene](https://github.com/KS-AVT/avt/blob/AVT2/eksempler.md) viser hvordan minimumkravene kan overholdes i praksis.
+[AVT eksemplene](./eksempler.md) viser hvordan minimumkravene kan overholdes i praksis.
 
 For å sjekke at xAPI statements er strukturert i henhold til standarden kan man bruke en validator, for eksempel [denne](https://lrs.io/ui/tools/xapi-statement-validator/).
