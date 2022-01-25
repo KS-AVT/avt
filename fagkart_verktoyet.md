@@ -1,5 +1,4 @@
 ## En kort beskrivelse av hvordan man bruker verktøyet Fagkart
----
 
 Pålogging til Fagkart via Feide: https://fagkart.no/#/
 
@@ -27,7 +26,6 @@ Noen ganger vil man ikke finne et passende valg for «Grunnleggende ferdighet»,
 
 Trykk på **«PUBLISERE»** etter at alle valg er gjort.
 
----
 Etter publisering vil man få nye valg.
 
 For å kopiere tag URL: Trykk på symbolet for «Kopier tag-URL». URL-adressen for hele taggingen er nå kopiert til utklippstavlen, og kan kopieres inn i et regneark eller lignende. Hvis man undersøker URL i nettleser vil man se at JSON fil korresponderer med de valgene man har gjort ved tagging. 
