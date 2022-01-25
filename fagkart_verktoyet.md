@@ -34,7 +34,6 @@ For å vise fagkart informasjon som er tilpasset xAPI formatering/struktur, klik
 
 For å fjerne alle valg og starte med å tagge en ny oppgave, kan man i emnet «Læreplan» velge «Norsk», for deretter å velge «Matematikk 1–10» igjen.
 
----
 
 ### Emner og nødvendighet med tanke på tagging
 
