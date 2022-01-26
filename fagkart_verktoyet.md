@@ -2,7 +2,7 @@
 
 Pålogging til Fagkart via Feide: https://fagkart.no/#/
 
-Velg «Fagkartkoder verktøy» i nedtrekksmenyen.
+Velg «Fagkartkoder verktøy» i nedtrekksmenyen øverst til venstre.
 
 I «Læreplan», velg «Matematikk 1–10».
 
@@ -28,9 +28,9 @@ Trykk på **«PUBLISERE»** etter at alle valg er gjort.
 
 Etter publisering vil man få nye valg.
 
-For å kopiere tag URL: Trykk på symbolet for «Kopier tag-URL». URL-adressen for hele taggingen er nå kopiert til utklippstavlen, og kan kopieres inn i et regneark eller lignende. Hvis man undersøker URL i nettleser vil man se at JSON fil korresponderer med de valgene man har gjort ved tagging. 
+Trykk på symbolet for «Kopier tag-URL». URL-adressen for hele taggingen er nå kopiert til utklippstavlen, og kan kopieres inn i et regneark eller lignende. Dersom man benytter regneark kan dette gjerne ha 2 kolonner; «læringsressurs» og «fagkart tag URL». Hvis man undersøker URL i nettleser vil man se at JSON fil korresponderer med de valgene man har gjort ved tagging. 
 
-For å vise fagkart informasjon som er tilpasset xAPI formatering/struktur, klikk på **{...}** ikonet. For å kopiere denne informasjonen, klikk på «Kopier og lukk» ikonet på høyre side. Denne informasjonen skal legges i xAPI struktur *context->contextActivities->grouping* (se [eksempler](eksempler.md)).
+For å vise fagkart informasjon som er tilpasset xAPI format/struktur, klikk på **{...}** ikonet. For å kopiere denne informasjonen, klikk på «Kopier og lukk» ikonet på høyre side. Denne informasjonen skal legges i xAPI struktur *context->contextActivities->grouping* (se [eksempler](eksempler.md)).
 
 For å fjerne alle valg og starte med å tagge en ny oppgave, kan man i emnet «Læreplan» velge «Norsk», for deretter å velge «Matematikk 1–10» igjen.
 
@@ -38,7 +38,7 @@ For å fjerne alle valg og starte med å tagge en ny oppgave, kan man i emnet «
 ### Emner og nødvendighet med tanke på tagging
 
 | Emne (fagkart-element)| Nødvendighet|
-|--------------|-----------:|
+|:--------------|-----------:|
 |Læreplan|Obligatorisk|
 |Kompetansemål|Obligatorisk|
 |Område i fagkart|Obligatorisk|

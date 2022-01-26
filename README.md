@@ -35,9 +35,9 @@ Overføring av xAPI data fra leverandører til AVT prosjektet kan gjøres enten 
 
 [Dataoverføring](./avt_xapi_dataoverf%C3%B8ring.md)
 
-## Fagkart verktøyet
-Fagkart verktøyet muliggjør tagging av læringsressurser slik at disse kan knyttes til AVT prosjektets fagkart.
+## Verktøyet Fagkart
+Verktøyet Fagkart muliggjør tagging av læringsressurser slik at disse kan knyttes til AVT prosjektets fagkart.
 
-[Fagkart verktøyet](./fagkart_verktoyet.md)
+[Verktøyet Fagkart](./fagkart_verktoyet.md)
 
-Når taggene er publisert gjennom fagkart verktøyet kan de knyttes til læringsressursene som en del av xAPI utsagnene. Som vist i [eksemplene](eksempler.md) legges da fagkart informasjonen til innenfor *context->contextActivities->grouping* i xAPI utsagnene.
+Når taggene er publisert og man har hentet ut relevant informasjon gjennom Verktøyet Fagkart kan taggene knyttes til læringsressursene som en del av xAPI utsagnene. Som vist i [eksemplene](eksempler.md) legges da fagkart tag informasjonen til innenfor *context->contextActivities->grouping* i xAPI utsagnene.
