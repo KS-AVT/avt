@@ -1,7 +1,7 @@
 # Aktivitetsdata for Vurdering og Tilpasning (AVT2)
 Dette repositoriet dokumenterer hvordan AVT2-prosjektet bruker xAPI-rammeverket.
 
-Her finnes eksempler på xAPI datastruktur og kall (for leverandører med egen LRS), samt informasjon om API minimumskrav og xAPI  dataoverføring.
+Her finnes eksempler på xAPI datastruktur og kall (for leverandører med egen LRS), samt informasjon om xAPI minimumskrav og xAPI dataoverføring. I tillegg er det informasjon om hvordan man bruker verktøyet Fagkart.
 
 ## xAPI-profil
 Prosjektet inkluderer xAPI-profil med nye konsepter:
@@ -34,3 +34,10 @@ AVT2-prosjektet definerer et sett av minimumskrav for xAPI utsagn som er nødven
 Overføring av xAPI data fra leverandører til AVT prosjektet kan gjøres enten ved overføring fra leverandørs LRS (preferert alternativ; kun mulig for leverandører med egen LRS) eller gjennom FTP overføring.
 
 [Dataoverføring](./avt_xapi_dataoverf%C3%B8ring.md)
+
+## Verktøyet Fagkart
+Verktøyet Fagkart muliggjør tagging av læringsressurser slik at disse kan knyttes til AVT prosjektets fagkart.
+
+[Verktøyet Fagkart](./fagkart_verktoyet.md)
+
+Når taggene er publisert og man har hentet ut relevant informasjon gjennom Verktøyet Fagkart kan taggene knyttes til læringsressursene som en del av xAPI utsagnene. Som vist i [eksemplene](eksempler.md) legges da fagkart tag informasjonen til innenfor *context->contextActivities->grouping* i xAPI utsagnene.
