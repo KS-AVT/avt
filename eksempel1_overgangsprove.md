@@ -42,7 +42,40 @@ Nr.|Comment|Who (actor)|Did (verb)|What (object)|
             "name": {
                 "nb-NO": "Overgangsprøven i regning, 4. trinn: Oppgave 23"
             },
-            "type": "http://adlnet.gov/expapi/activities/cmi.interaction"
+            "description": {
+                "nb-NO": "Sofie hoppet 2,7 m i lengde. Neste gang hoppet hun 3,4 m.\nHvor langt hoppet hun til sammen?"
+            },
+            "type": "http://adlnet.gov/expapi/activities/cmi.interaction",
+            "interactionType": "choice",
+            "choices": [
+                {
+                    "id": "A",
+                    "description": {
+                        "nb-NO": "5,1 m"
+                    }
+                },
+                {
+                    "id": "B",
+                    "description": {
+                        "nb-NO": "5,11 m"
+                    }
+                },
+                {
+                    "id": "C",
+                    "description": {
+                        "nb-NO": "6,1 m"
+                    }
+                },
+                {
+                    "id": "D",
+                    "description": {
+                        "nb-NO": "6,11 m"
+                    }
+                }
+            ],
+            "correctResponsesPattern": [
+                "C"
+            ]
         }
     },
     "result": {
@@ -141,7 +174,40 @@ Nr.|Comment|Who (actor)|Did (verb)|What (object)|
             "name": {
                 "nb-NO": "Overgangsprøven i regning, 4. trinn: Oppgave 23"
             },
-            "type": "http://adlnet.gov/expapi/activities/cmi.interaction"
+            "description": {
+                "nb-NO": "Sofie hoppet 2,7 m i lengde. Neste gang hoppet hun 3,4 m. Hvor langt hoppet hun til sammen?"
+            },
+            "type": "http://adlnet.gov/expapi/activities/cmi.interaction",
+            "interactionType": "choice",
+            "choices": [
+                {
+                    "id": "A",
+                    "description": {
+                        "nb-NO": "5,1 m"
+                    }
+                },
+                {
+                    "id": "B",
+                    "description": {
+                        "nb-NO": "5,11 m"
+                    }
+                },
+                {
+                    "id": "C",
+                    "description": {
+                        "nb-NO": "6,1 m"
+                    }
+                },
+                {
+                    "id": "D",
+                    "description": {
+                        "nb-NO": "6,11 m"
+                    }
+                }
+            ],
+            "correctResponsesPattern": [
+                "C"
+            ]
         }
     },
     "result": {
