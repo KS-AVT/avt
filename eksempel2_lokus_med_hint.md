@@ -47,7 +47,40 @@ Nr.|Comment|Who (actor)|Did (verb)|What (object)|
             "name": {
                 "nb-NO": "4 Tall og algebra: Oppgave 6"
             },
-            "type": "http://adlnet.gov/expapi/activities/cmi.interaction"
+            "description": {
+                "nb-NO": "Hvilke er ligninger?"
+            },
+            "type": "http://adlnet.gov/expapi/activities/cmi.interaction",
+            "interactionType": "choice",
+            "choices": [
+                {
+                    "id": "A",
+                    "description": {
+                        "nb-NO": "4 - 3 * (2 - x)"
+                    }
+                },
+                {
+                    "id": "B",
+                    "description": {
+                        "nb-NO": "1 = 5 - (8 - y)"
+                    }
+                },
+                {
+                    "id": "C",
+                    "description": {
+                        "nb-NO": "4 - 3 * (2 - x) = 1"
+                    }
+                },
+                {
+                    "id": "D",
+                    "description": {
+                        "nb-NO": "x = 5"
+                    }
+                }
+            ],
+            "correctResponsesPattern": [
+                "B,C,D"
+            ]
         }
     },
     "result": {
@@ -146,7 +179,40 @@ Nr.|Comment|Who (actor)|Did (verb)|What (object)|
             "name": {
                 "nb-NO": "4 Tall og algebra: Oppgave 6"
             },
-            "type": "http://adlnet.gov/expapi/activities/cmi.interaction"
+            "description": {
+                "nb-NO": "Hvilke er ligninger?"
+            },
+            "type": "http://adlnet.gov/expapi/activities/cmi.interaction",
+            "interactionType": "choice",
+            "choices": [
+                {
+                    "id": "A",
+                    "description": {
+                        "nb-NO": "4 - 3 * (2 - x)"
+                    }
+                },
+                {
+                    "id": "B",
+                    "description": {
+                        "nb-NO": "1 = 5 - (8 - y)"
+                    }
+                },
+                {
+                    "id": "C",
+                    "description": {
+                        "nb-NO": "4 - 3 * (2 - x) = 1"
+                    }
+                },
+                {
+                    "id": "D",
+                    "description": {
+                        "nb-NO": "x = 5"
+                    }
+                }
+            ],
+            "correctResponsesPattern": [
+                "B,C,D"
+            ]
         }
     },
     "result": {
