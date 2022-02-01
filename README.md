@@ -31,7 +31,7 @@ AVT2-prosjektet definerer et sett av minimumskrav for xAPI utsagn som er nødven
 [Minimumskrav](avt_xapi_minimumskrav.md)
 
 ## xAPI dataoverføring
-Overføring av xAPI data fra leverandører til AVT prosjektet kan gjøres enten ved overføring fra leverandørs LRS (preferert alternativ; kun mulig for leverandører med egen LRS) eller gjennom FTP overføring.
+Overføring av xAPI data fra leverandører til AVT prosjektet kan gjøres ved 1) SFTP overføring; eller ved 2) overføring fra leverandørs LRS (kun mulig for leverandører med egen LRS som opererer i henhold til xAPI standarden).
 
 [Dataoverføring](./avt_xapi_dataoverf%C3%B8ring.md)
 
