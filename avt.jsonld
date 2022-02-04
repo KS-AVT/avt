@@ -25,7 +25,7 @@
       "type": "ActivityType",
       "inScheme": "https://fagkart.no/avt2/xapi",
       "prefLabel": {
-        "en": "Subjects Map tag",
+        "en": "Subject Map tag",
         "nb": "FagKart tag"
       },
       "definition": {
