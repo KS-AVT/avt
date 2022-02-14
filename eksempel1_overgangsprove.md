@@ -87,11 +87,6 @@ Nr.|Comment|Who (actor)|Did (verb)|What (object)|
             "max": 3.0,
             "raw": 0.0,
             "scaled": 0.0
-        },
-        "extensions": {
-	        "https://w3id.org/xapi/avt/result-extensions/max-hints": 0,
-	        "https://w3id.org/xapi/avt/result-extensions/hints-used": 0,
-	        "https://w3id.org/xapi/avt/result-extensions/attempts": 1
         }
     },
     "context": {
@@ -219,11 +214,6 @@ Nr.|Comment|Who (actor)|Did (verb)|What (object)|
             "max": 3.0,
             "raw": 3.0,
             "scaled": 1.0
-        },
-        "extensions": {
-	        "https://w3id.org/xapi/avt/result-extensions/max-hints": 0,
-	        "https://w3id.org/xapi/avt/result-extensions/hints-used": 0,
-	        "https://w3id.org/xapi/avt/result-extensions/attempts": 1
         }
     },
     "context": {
