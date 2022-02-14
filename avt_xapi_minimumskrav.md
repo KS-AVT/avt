@@ -5,7 +5,10 @@ Listen under spesifiserer minimumskrav for xAPI statements i AVT prosjektet.
 * Man må ha med Required-elementene fra selve xAPI-spesifikasjonen ([se her for mer info](https://github.com/adlnet/xAPI-Spec/blob/master/xAPI-Data.md#24-statement-properties)).
 
 * xAPI datastruktur:
-  * Id: Hver xAPI statement skal ha en unik [statement ID](https://github.com/adlnet/xAPI-Spec/blob/master/xAPI-Data.md#241-id). Basert på xAPI spesifikasjonen skal statement id være en UUID i henhold til variant 2 av RFC 4122.
+  * Id: Hver xAPI statement skal ha en unik [statement ID](https://github.com/adlnet/xAPI-Spec/blob/master/xAPI-Data.md#241-id). Basert på xAPI spesifikasjonen skal statement ID være en UUID i henhold til variant 2 av RFC 4122.
+
+     *Merk: Statement ID skal knytte (hendelses-)data fra leverandørdatabase til xAPI statement. Derfor må man bruke samme ID hvis man oppdaterer et gitt xAPI statement, eller hvis man sletter og deretter oppretter det samme xAPI statementet på nytt. Et eksempel kan være hvis man har et xAPI statement som har informasjon om fagkart_tag, men man siden ser at "tag-en" som er brukt er feil; da er det viktig at man fortsetter å bruke den samme statement ID-en også etter at man har oppdatert til riktig fagkart_tag. Et annet eksempel kan være et statement hvor man identifiserer at det har skjedd en feil, f.eks. at tjenesteleverandør (feide-clientinfo) mangler. Også her er det viktig å benytte samme statement ID både før og etter at man gjør nødvendige korrigeringer.*
+
   * Actor: Må være en “Nye feide”- (aka Dataporten-) bruker. Tjenesten må altså være en dataporten tjeneste.
   * Verb:
     * Required: [Answered](http://adlnet.gov/expapi/verbs/answered). Dette blir vanligvis brukt om enkeltitems (enkeltoppgaver).
