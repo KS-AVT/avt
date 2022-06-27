@@ -10,7 +10,7 @@ xAPI data  fra de ulike leverandørene i AVT prosjektet lagres sentralt i AVT pr
 
     AVT prosjektet ønsker å motta en JSONL fil per dag (alternativt kan filen deles opp hvis ønskelig). Med tanke på bl.a. reduksjon av filstørrelse og dataintegritet bør man bruke tar og gzip for henholdsvis arkivering og komprimering av filer. 
     
-    AVT ber om følgende navngiving av leverte filer: *YYYY-MM-DD_<timestamp>.tar.gz*.
+    AVT ber om følgende navngiving av leverte filer: *YYYY-MM-DD_\<timestamp\>.tar.gz*.
 
     - *YYYY-MM-DD* er da datoen for hendelsene (læringsaktivitetene) som er fanget opp i xAPI statementene.
     - *\<timestamp\>* er "unix timestamp", i sekunder, og representerer når arkivet (tar.gz filen) ble generert.
