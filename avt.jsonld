@@ -67,7 +67,7 @@
       "inScheme": "https://w3id.org/xapi/avt",
       "prefLabel": {
         "en": "feide-clientinfo",
-        "nb"; "feide-klientinfo"
+        "nb": "feide-klientinfo"
       },
       "definition": {
         "en": "Information about a specific client registered in FEIDE OAuth/OpenID Connect.",
