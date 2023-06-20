@@ -217,7 +217,7 @@ Nr.|Comment|Who (actor)|Did (verb)|What (object)|
     },
     "result": {
         "duration": "PT2M45S",
-        "response": "B,C,D",
+        "response": "A,B,C",
         "success": true,
         "score": {
             "min": 0.0,
